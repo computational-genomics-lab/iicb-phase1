@@ -1,0 +1,50 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div class="loader" *ngIf="loading"></div>
+
+<div class="container-fluid px-0 position-relative full-page">
+
+    <div class="browser-details-container" *ngIf="! loading">
+        <div class="bg-gray">
+            <div class="nav-box">
+
+            </div>
+        </div>
+        <div class="mr-3">
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <h3 class="text-success">{{ urlParams.label }}</h3>
+                    <p><strong>Description: </strong> <span class="text-danger">{{ data.Description }}</span></p>
+                    <p><strong>Location:</strong> {{ data.Location }}</p>
+                </div>
+            </div>
+
+            <table class="table table-bordered" *ngIf="data.Table.length">
+                <thead>
+                    <tr>
+                        <th>Transcript Name</th>
+                        <th>Function/comments</th>                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of data.Table">
+                        <td><a (click)="goToBrowserDetail( row.Link )" class="hover-link text-info">{{ row.Trans }}</a></td>
+                        <td>{{ row.Func }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="card bg-light mb-3">
+                <div class="card-header"><h5 class="m-0">Sequence</h5></div>
+                <div class="card-body">
+                    <p class="text-success"><strong>{{ data.Sequence_len }} bases</strong>(100 bases per row)</p>
+                    <pre class="sequence">{{ data.Sequence }}</pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

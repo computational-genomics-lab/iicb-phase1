@@ -1,0 +1,25 @@
+<div id="lsidebar">
+    <div class="box">
+        <h2>News</h2>
+        <ul id="news-feed" class="p-0 mb-1">
+            <ng-container *ngFor="let line of news_feed">
+                <li *ngIf="line.Line_Status" [className]="line.Line_Format == 'BOLD' ? 'font-weight-bold' : ''">
+                    {{ line.Line_Text }}
+                </li>
+            </ng-container>
+        </ul>
+        <ul>
+            <li>
+                <a class="font-weight-bold" style="font-size:17px" [routerLink]="['/archive']">Archive</a>
+            </li>
+        </ul>        
+    </div>
+    <div class="box">
+        <h2>Video Tutorial</h2>
+        <ul>
+            <li *ngFor="let video of videos_feed">
+                <a href="{{ video.video_link }}" target="_blank">{{ video.video_title }}</a>
+            </li>
+        </ul>
+    </div>
+</div>

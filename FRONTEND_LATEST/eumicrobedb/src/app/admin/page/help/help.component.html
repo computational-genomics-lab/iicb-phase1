@@ -1,0 +1,60 @@
+<app-admin-header></app-admin-header>
+
+<div *ngIf="!showForm" class="loader"></div>
+
+<div class="container-fluid full-page-admin">
+    <div class="row">
+        <div class="col my-3">
+            <form [formGroup]="form" (ngSubmit)="saveContent()">
+                <div class="card">
+                    <div class="card-header"><h5 class="m-0">Edit Help Page</h5></div>
+                    <div class="card-body">
+
+                        <div id="content-block" *ngIf="showForm">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th width="10%">Status</th>
+                                        <th width="30%">Heading</th>
+                                        <th width="10%">Released Month</th>
+                                        <th width="10%">Released Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of form.get('items').controls; let i = index;" formArrayName="items">
+                                        <td [formGroupName]="i">
+                                            <div class="custom-control custom-switch">
+                                                <input class="custom-control-input" id="customSwitch{{ i }}" type="checkbox" formControlName="status">
+                                                <label class="custom-control-label" for="customSwitch{{ i }}">show</label>
+                                            </div>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <textarea class="form-control" rows="2" formControlName="heading"></textarea>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <select class="custom-select" formControlName="released_month">
+                                                <option *ngFor="let month of months" value="{{ month }}">{{ month }}</option>
+                                            </select>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <input class="form-control" type="number" formControlName="released_year" max="2050">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button [disabled]="loading" class="btn btn-primary">
+                            <span *ngIf="! loading">Save Changes</span>
+                            <span *ngIf="loading">Please wait...</span>
+                        </button>
+                        <a [routerLink]="['/admin/dashboard']" class="btn btn-outline-secondary ml-3">Cancel</a>                
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<app-admin-footer></app-admin-footer>

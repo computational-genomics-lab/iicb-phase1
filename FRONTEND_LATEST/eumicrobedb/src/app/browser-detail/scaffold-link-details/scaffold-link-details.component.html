@@ -1,0 +1,48 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div class="loader" *ngIf="loading"></div>
+
+<div class="container-fluid px-0 position-relative full-page">
+
+    <div class="browser-details-container" *ngIf="! loading">
+        <div class="bg-gray">
+            <div class="nav-box">
+
+            </div>
+        </div>
+        <div class="mr-3">
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <p><strong>Scaffold:</strong> {{ data.Scaffold }}</p>
+                    <p><strong>Gene_id:</strong> {{ data.Gene_id }}</p>
+                    <p><strong>Description:</strong> {{ data.Description }}</p>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-3">
+                <div class="card-header"><h5 class="m-0">Predicted Gene Model: {{ data.PredGene_len }} bases (green marked regions are exons, white marked are introns)</h5></div>
+                <div class="card-body">
+                    <pre class="sequence">{{ data.PredGene }}</pre>
+                </div>
+            </div>
+            
+            <div class="card bg-light mb-3">
+                <div class="card-header"><h5 class="m-0">Predicted CDS: Length {{ data.CDS_len }}</h5></div>
+                <div class="card-body">
+                    <pre class="sequence">{{ data.CDS }}</pre>
+                </div>
+            </div>
+            
+            <div class="card bg-light mb-3">
+                <div class="card-header"><h5 class="m-0">Protein Sequence: Length {{ data.ProteinSeq_len }}</h5></div>
+                <div class="card-body">
+                    <pre class="sequence">{{ data.ProteinSeq }}</pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

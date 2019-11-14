@@ -1,0 +1,329 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div class="loader" *ngIf="loading"></div>
+
+<div class="container-fluid px-0 my-3 position-relative full-page">
+
+    <div class="browser-details-container" *ngIf="! loading">        
+        <div>
+            <div class="position-fixed nav-box bg-gray">
+                <ul class="list-group page-nav-link">
+                    <li class="list-group-item bg-gray font-weight-bold text-dark">Page Navigation</li>
+                    <li class="list-group-item bg-gray" *ngFor="let pagenav of pageNavigations; let i = index">
+                        <a class="text-success font-weight-bold hover-link" [attr.data-to]="pagenav|lowercase" (click)="moveTo($event)" >{{ pagenav }}</a>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+        <div class="mr-3">
+            <h3 class="text-info">{{ data.Organism_name }}</h3>
+
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <p><strong>Transcript Name:</strong> {{ data.Trans_name }}</p>
+                    <p><strong>Location: </strong> <a class="hover-link text-primary" (click)="viewList( data.Location_link )">{{ data.Location }}</a></p>
+                    <p><strong>Orientation:</strong> {{ data.Orientation }} Number of Exons: {{ data.ExonsNum }}</p>
+                    <p><strong>Description:</strong> {{ data.Description }}</p>
+                    <p *ngFor="let comment of data.Comments">{{ comment }}</p>
+                    <p><a href="{{ data.NCBIlink }}">Run NCBI BLAST with nr Database</a></p>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="block-analysis">
+                <div class="card-header">
+                    <h5 class="m-0">Analysis</h5>
+                </div>
+                <div class="card-body">
+                    <div> 
+                        <div class="btn-tabs d-flex flex-wrap justify-content-center w-100 m-auto">                            
+                            <button [id]="'tab-' + tab.replace(' ', '')" class="btn btn-sm mb-1 mx-1" [ngClass]="i !== ( analysisTabs.length - 1 ) ? 'btn-tab btn-outline-secondary' : ' btn-outline-danger'" (click)="fetchTabData( tab )" *ngFor="let tab of analysisTabs; let i = index" [disabled]="i === ( analysisTabs.length - 1 )">{{ tab }}</button>                        
+                        </div>  
+                        <div class="ui-tab-container my-3">
+                            <div class="loader tabloader" *ngIf="tabLoading"></div>
+                            <tabset>
+                                <tab *ngFor="let tabz of uiTabs"
+                                    [heading]="tabz.title"
+                                    [active]="tabz.active"
+                                    (selectTab)="tabz.active = true"
+                                    (deselect)="tabz.active = false"
+                                    [disabled]="tabz.disabled"
+                                    [removable]="tabz.removable"
+                                    (removed)="removeTabHandler(tabz)"
+                                    [customClass]="tabz.customClass">
+                                    <div class="card-body bg-light" [innerHTML]="tabz?.content"></div>
+                                </tab>                            
+                            </tabset>
+                        </div>             
+                    </div>
+
+                    <div class="d-flex justify-content-center my-5">
+                        <svg height="100" [attr.width]="sc_svg_width + 100" *ngIf="data.scaffold_pos.rect.length">
+                            <text x="0" y="10" font-size="13" text-anchor="left">position on scaffold</text>
+                            <text x="0" y="56" font-size="13" text-anchor="left" fill="blue">{{ data.scaffold_pos.strand }}</text>
+
+                            <ng-container *ngFor="let rect of sc_rects">
+
+                                <text [attr.x]="rect.position_x" y="24" font-size="10" text-anchor="left" fill="red">{{ rect.left_top_label }}</text>
+                                <line [attr.x1]="rect.position_x" [attr.x2]="rect.position_x" y1="25" y2="90" stroke-dasharray="6,1" stroke="red" stroke-width="1"/>
+                                <text [attr.x]="rect.position_x" y="98" font-size="10" text-anchor="left" fill="red">{{ rect.left_bottom_label }}</text>
+
+                                <a class="hover-link" (click)="openScaffoldLinkDetails()">
+                                    <rect [attr.x]="rect.position_x" y="45" height="16" style="fill:rgb(200,0,255)" [attr.width]="rect.width"/>
+                                </a>
+
+                                <text [attr.x]="rect.right_line_start" y="38" font-size="10" text-anchor="middle" fill="blue">{{ rect.right_top_label }}</text>
+                                <line [attr.x1]="rect.right_line_start" [attr.x2]="rect.right_line_start" y1="40" y2="70" stroke-dasharray="6,1" stroke="blue" stroke-width="1"/>
+                                <text [attr.x]="rect.right_line_start" y="80" font-size="10" text-anchor="middle" fill="blue">{{ rect.right_bottom_label }}</text>  
+                            
+                            </ng-container>
+
+
+                            <ng-container *ngFor="let line of sc_lines">
+                                <line stroke="#ffc800" [attr.x1]="sc_plus_width + ( line.l / sc_width_const )" y1="53" [attr.x2]="sc_plus_width + ( line.r / sc_width_const )" y2="53"/>   
+                            </ng-container>    
+                        </svg>                    
+                    </div>
+
+                    <div id="fickettChartContainer" class="my-5" style="height: 370px; width: 100%;"></div>
+                    
+                    <div id="logChartContainer" class="my-5" style="height: 370px; width: 100%;"></div>
+
+                </div>
+            </div>
+
+            <h5 class="bg-warning py-2 pl-2 my-3 text-dark">Functional Annotation</h5>
+
+            <div class="card mb-3" id="block-fprintscan">
+                <div class="card-header">
+                    <h5 class="m-0">FPRINTSCAN</h5>
+                </div>
+                <div class="card-body py-2">
+                    <ng-container *ngIf="data.FprintScan">
+
+                        <div class="text-center py-3">
+                            <svg height="100" [attr.width]="motif_svg_width" *ngIf="data.FprintScan?.Plot">
+                                <text x="0" y="10" font-size="13" text-anchor="left">position on motif</text>
+
+                                <ng-container *ngFor="let text of data.FprintScan.Plot.texts; let i = index">
+                                    <text [attr.x]="data.FprintScan.Plot.texts[i].l / motif_svg_width" [attr.y]="text.t" font-size="13" text-anchor="left" [attr.fill]="text.col">{{ text.label }}</text>
+                                </ng-container>
+
+                                <ng-container *ngFor="let rect of data.FprintScan.Plot.rects">
+
+                                    <rect [attr.x]="rect.l / motif_svg_width" [attr.y]="rect.t - 7" [attr.height]="rect.b - rect.t" [ngStyle]="{fill:rect.color}" [attr.width]="rect.color == 'orange' ? (rect.r - rect.l) / motif_svg_width : (rect.r - rect.l) ? (rect.r - rect.l) : 1" />
+                                
+                                </ng-container>    
+                            </svg>                            
+                        </div>
+
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th *ngFor="let heading of data.FprintScan.Table_headers">{{ heading }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let rowitem of data.FprintScan.Table_rows">
+                                    <td *ngFor="let item of rowitem.vals; let i = index">
+                                        <ng-container *ngIf="(i + 1) == data.FprintScan.Table_link_on_col;else nolinkProfileText">
+                                            <a href="{{ rowitem.link }}" target="_blank">{{ item }}</a>
+                                        </ng-container>
+                                        <ng-template #nolinkProfileText>{{ item }}</ng-template>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-container>
+                </div>
+            </div>              
+
+            <div class="card mb-3" id="block-profilescan">
+                <div class="card-header">
+                    <h5 class="m-0">ProfileScan</h5>
+                </div>
+                <div class="card-body py-2">
+                    <ng-container *ngIf="data.ProfileScan">
+
+                        <div class="text-center py-3">
+                            <svg height="100" [attr.width]="motif_svg_width" *ngIf="data.ProfileScan?.Plot">
+                                <text x="0" y="10" font-size="13" text-anchor="left">position on motif</text>
+
+                                <ng-container *ngFor="let text of data.ProfileScan.Plot.texts; let i = index">
+                                    <text [attr.x]="data.ProfileScan.Plot.texts[i].l / motif_svg_width" [attr.y]="text.t" font-size="13" text-anchor="left" [attr.fill]="text.col">{{ text.label }}</text>
+                                </ng-container>
+
+                                <ng-container *ngFor="let rect of data.ProfileScan.Plot.rects">
+
+                                    <rect [attr.x]="rect.l / motif_svg_width" [attr.y]="rect.t - 7" [attr.height]="rect.b - rect.t" [ngStyle]="{fill:rect.color}" [attr.width]="rect.color == 'orange' ? (rect.r - rect.l) / motif_svg_width : (rect.r - rect.l) ? (rect.r - rect.l) : 1" />
+                                
+                                </ng-container>    
+                            </svg>                            
+                        </div>
+
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th *ngFor="let heading of data.ProfileScan.Table_headers">{{ heading }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let rowitem of data.ProfileScan.Table_rows">
+                                    <td *ngFor="let item of rowitem.vals; let i = index">
+                                        <ng-container *ngIf="(i + 1) == data.ProfileScan.Table_link_on_col;else nolinkProfileText">
+                                            <a href="{{ rowitem.link }}" target="_blank">{{ item }}</a>
+                                        </ng-container>
+                                        <ng-template #nolinkProfileText>{{ item }}</ng-template>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-container>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="block-hmmsmart">
+                <div class="card-header">
+                    <h5 class="m-0">HmmSmart</h5>
+                </div>
+                <div class="card-body py-2">
+                    <ng-container *ngIf="data.HmmSmart">
+
+                        <div class="text-center py-3">
+                            <svg height="100" [attr.width]="motif_svg_width" *ngIf="data.HmmSmart?.Plot">
+                                <text x="0" y="10" font-size="13" text-anchor="left">position on motif</text>
+
+                                <ng-container *ngFor="let text of data.HmmSmart.Plot.texts; let i = index">
+                                    <text [attr.x]="data.HmmSmart.Plot.texts[i].l / motif_svg_width" [attr.y]="text.t" font-size="13" text-anchor="left" [attr.fill]="text.col">{{ text.label }}</text>
+                                </ng-container>
+
+                                <ng-container *ngFor="let rect of data.HmmSmart.Plot.rects">
+
+                                    <rect [attr.x]="rect.l / motif_svg_width" [attr.y]="rect.t - 7" [attr.height]="rect.b - rect.t" [ngStyle]="{fill:rect.color}" [attr.width]="rect.color == 'orange' ? (rect.r - rect.l) / motif_svg_width : (rect.r - rect.l) ? (rect.r - rect.l) : 1" />
+                                
+                                </ng-container>    
+                            </svg>                            
+                        </div>
+
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th *ngFor="let heading of data.HmmSmart.Table_headers">{{ heading }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let rowitem of data.HmmSmart.Table_rows">
+                                    <td *ngFor="let item of rowitem.vals; let i = index">
+                                        <ng-container *ngIf="(i + 1) == data.HmmSmart.Table_link_on_col;else nolinkProfileText">
+                                            <a href="{{ rowitem.link }}" target="_blank">{{ item }}</a>
+                                        </ng-container>
+                                        <ng-template #nolinkProfileText>{{ item }}</ng-template>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-container>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="block-interpro">
+                <div class="card-header">
+                    <h5 class="m-0">InterPro</h5>
+                </div>
+                <div class="card-body py-2">
+                    <ng-container *ngIf="data.InterPro">
+
+                        <div class="text-center py-3">
+                            <svg height="100" [attr.width]="motif_svg_width" *ngIf="data.InterPro?.Plot">
+                                <text x="0" y="10" font-size="13" text-anchor="left">position on motif</text>
+
+                                <ng-container *ngFor="let text of data.InterPro.Plot.texts; let i = index">
+                                    <text [attr.x]="data.InterPro.Plot.texts[i].l / motif_svg_width" [attr.y]="text.t" font-size="13" text-anchor="left" [attr.fill]="text.col">{{ text.label }}</text>
+                                </ng-container>
+
+                                <ng-container *ngFor="let rect of data.InterPro.Plot.rects">
+
+                                    <rect [attr.x]="rect.l / motif_svg_width" [attr.y]="rect.t - 7" [attr.height]="rect.b - rect.t" [ngStyle]="{fill:rect.color}" [attr.width]="rect.color == 'orange' ? (rect.r - rect.l) / motif_svg_width : (rect.r - rect.l) ? (rect.r - rect.l) : 1" />
+                                
+                                </ng-container>    
+                            </svg>                            
+                        </div>
+
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th *ngFor="let heading of data.InterPro.Table_headers">{{ heading }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let rowitem of data.InterPro.Table_rows">
+                                    <td *ngFor="let item of rowitem.vals; let i = index">
+                                        <ng-container *ngIf="(i + 1) == data.InterPro.Table_link_on_col;else nolinkProfileText">
+                                            <a href="{{ rowitem.link }}" target="_blank">{{ item }}</a>
+                                        </ng-container>
+                                        <ng-template #nolinkProfileText>{{ item }}</ng-template>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-container>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="block-go">
+                <div class="card-header">
+                    <h5 class="m-0">GO</h5>
+                </div>
+                <div class="card-body py-2">
+                    <ng-container *ngIf="data.GO">
+
+                        <div class="text-center py-3">
+                            <svg height="100" [attr.width]="motif_svg_width" *ngIf="data.GO?.Plot">
+                                <text x="0" y="10" font-size="13" text-anchor="left">position on motif</text>
+
+                                <ng-container *ngFor="let text of data.GO.Plot.texts; let i = index">
+                                    <text [attr.x]="data.GO.Plot.texts[i].l / motif_svg_width" [attr.y]="text.t" font-size="13" text-anchor="left" [attr.fill]="text.col">{{ text.label }}</text>
+                                </ng-container>
+
+                                <ng-container *ngFor="let rect of data.GO.Plot.rects">
+
+                                    <rect [attr.x]="rect.l / motif_svg_width" [attr.y]="rect.t - 7" [attr.height]="rect.b - rect.t" [ngStyle]="{fill:rect.color}" [attr.width]="rect.color == 'orange' ? (rect.r - rect.l) / motif_svg_width : (rect.r - rect.l) ? (rect.r - rect.l) : 1" />
+                                
+                                </ng-container>    
+                            </svg>                            
+                        </div>
+
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th *ngFor="let heading of data.GO.Table_headers">{{ heading }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let rowitem of data.GO.Table_rows">
+                                    <td *ngFor="let item of rowitem.vals; let i = index">
+                                        <ng-container *ngIf="(i + 1) == data.GO.Table_link_on_col;else nolinkProfileText">
+                                            <a href="{{ rowitem.link }}" target="_blank">{{ item }}</a>
+                                        </ng-container>
+                                        <ng-template #nolinkProfileText>{{ item }}</ng-template>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-container>
+                </div>
+            </div>            
+
+            <div class="card bg-light mb-3">
+                <div class="card-header"><h5 class="m-0">Sequence</h5></div>
+                <div class="card-body">
+                    <p class="text-success"><strong>{{ (sequence).length }} bases</strong>(100 bases per row)</p>
+                    <pre class="sequence">{{ sequence }}</pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

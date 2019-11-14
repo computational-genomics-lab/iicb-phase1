@@ -1,0 +1,36 @@
+<nav class="navbar navbar-dark topbar-dark py-0">
+    <div class="container">
+        <ul class="nav nav-topbar text-uppercase">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link text-white" [routerLink]="['/about-us']">About Us</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link text-white" [routerLink]="['/help']">Help</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link text-white" [routerLink]="['/download']">Download</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link text-white" [routerLink]="['/contact']">Contact</a>
+            </li>
+        </ul>
+        <ul class="nav nav-topbar text-uppercase">
+            <li class="nav-item" *ngIf="! isUserLoggedIn" routerLinkActive="active">
+                <a class="nav-link text-white font-weight-bold" [routerLink]="['/login']">Login</a>
+            </li>
+            <li *ngIf="isUserLoggedIn">
+                <a class="nav-link text-white font-weight-bold" [routerLink]="['/admin/dashboard']">Dashboard</a>
+            </li>
+            <li *ngIf="isUserLoggedIn">
+                <a class="nav-link text-white font-weight-bold logout-link" (click)="onLogout()">Log out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="logo-box">
+    <div class="container">
+        <a class="py-3" [routerLink]="['/']">
+            <img src="../../assets/images/logo.png" alt="logo" class="logo">
+        </a>        
+    </div>    
+</div>

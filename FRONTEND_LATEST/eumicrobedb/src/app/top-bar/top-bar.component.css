@@ -1,0 +1,21 @@
+.topbar-dark {
+    background-color: #000000;
+}
+.nav-topbar {
+    font-size: 12px;
+    font-weight: 700;
+}
+.nav-item.active a {
+    text-decoration: underline;
+}
+.logo-box {
+    background-image: url(../../assets/images/new.png);
+    background-position-y: -36px;
+    background-repeat: repeat-x;    
+}
+.logo {
+    height: 78px;
+}
+.logout-link:hover {
+    cursor: pointer;
+}

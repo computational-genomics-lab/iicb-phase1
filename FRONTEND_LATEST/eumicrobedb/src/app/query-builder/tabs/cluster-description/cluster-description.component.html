@@ -1,0 +1,20 @@
+<h5 class="text-danger">Search by cluster description</h5>
+<form [formGroup]="queryForm" (ngSubmit)="processQuery()">
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label">Enter Cluster description</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="cluster_description">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary px-3" [disabled]="!queryForm.valid || processingQuery"><span *ngIf="!processingQuery"><i class="fas fa-search"></i> Search</span><span *ngIf="processingQuery">Please Wait...</span></button>
+</form>
+
+<ng-container *ngIf="queryItem.length">
+    <hr>
+    <h3 class="text-primary">Search Results <span *ngIf="queryItem">({{ queryItem.length }})</span></h3>
+    <table id="cluster-description-search-result" class="table table-striped table-sm my-3"></table>
+</ng-container>
+
+<div class="alert alert-danger mt-3" role="alert">
+    Each of the clusters have a COG ID assigned to them post orthoMCL run. A key word search by the annotation based on the COGs will be able to pull out the cluster and its members when queried upon.<br>Input:example: condensin complex
+</div>

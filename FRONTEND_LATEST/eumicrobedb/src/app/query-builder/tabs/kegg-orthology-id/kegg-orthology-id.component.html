@@ -1,0 +1,27 @@
+<h5 class="text-danger">Search By Pathway</h5>
+<form [formGroup]="queryForm" (ngSubmit)="processQuery()">
+    <div class="form-group row">
+        <label for="organism_name" class="col-md-3 col-form-label">Select an organism</label>
+        <div class="col-md-6">
+            <select formControlName="organism_name" id="organism_name" class="custom-select">
+                <option value=""></option>
+                <option *ngFor="let item of listItems" value="{{ item.organism + '-' + item.version }}">{{ item.label }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="kegg_id" class="col-md-3 col-form-label">Enter KEGG ID</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="kegg_id" id="kegg_id">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary px-3" [disabled]="!queryForm.valid || processingQuery"><span *ngIf="!processingQuery"><i class="fas fa-search"></i> Search</span><span *ngIf="processingQuery">Please Wait...</span></button>
+</form>
+
+<ng-container *ngIf="queryItem.length">
+    <hr>
+    <h3 class="text-primary">Search Results <span *ngIf="queryItem">({{ queryItem.length }})</span></h3>
+    <table id="kegg-orthology-search-result" class="table table-striped table-sm my-3"></table>
+</ng-container>
+
+<div class="alert alert-danger mt-3" role="alert">This is one of the nicest query features available in the database. Upon entering a KOG ID, the database is searched and if more than one gene maps to the same KOG ID, the out put page shows the list of genes in a table format. There may be instances where the output page contains same gene mapped to same KOG ID and the list appears redundant. This happens when the same KOG ID is part of multiple metabolic pathways. e.g; Upon searching for K08269 in Albugo laibachiiNC14 (V1), two records appear identical. This is because the KO ID linked to two different pathways e.g; one connects tomTOR signalling pathway with pathway id ko04150 and the other connects to regulation of autophagy pathway (pathway id ko04140). One another interesting feature in the output pathway map is the presence of boxes with red colored texts representing KOG IDs. This indicates the query organism also has curated proteins having KOG IDS that are part of the particular pathway.</div>

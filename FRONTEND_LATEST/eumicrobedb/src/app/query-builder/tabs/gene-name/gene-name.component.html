@@ -1,0 +1,196 @@
+<div class="loader" *ngIf="loading"></div>
+
+<ng-container *ngIf="! loading">
+    <h5 class="text-danger">Search for Gene by Gene Name</h5>
+    <form [formGroup]="queryForm" (ngSubmit)="processQuery()">
+        <div class="form-group row">
+            <label for="organism_name" class="col-md-3 col-form-label">Select an organism</label>
+            <div class="col-md-6">
+                <select formControlName="organism_name" id="organism_name" class="custom-select">
+                    <option value=""></option>
+                    <ng-container *ngIf="listItems.length;else none">
+                        <option *ngFor="let item of listItems" value="{{ item.organism + '-' + item.version }}">{{ item.label }}</option>
+                    </ng-container>
+                    <ng-template #none><option>Please wait...</option></ng-template>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="gene_name" class="col-md-3 col-form-label">Name of the gene</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" formControlName="gene_name" id="gene_name">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary px-3" [disabled]="!queryForm.valid || processingQuery"><span *ngIf="!processingQuery"><i class="fas fa-search"></i> Search</span><span *ngIf="processingQuery">Please Wait...</span></button>
+    </form>
+
+    <ng-container *ngIf="queryItem.length">
+        <hr>
+        <h3 class="text-primary">Search Results <span *ngIf="queryItem">({{ resultCount }})</span></h3>
+        <table id="gene-name-search-result" class="table table-striped table-sm my-3"></table>
+    </ng-container>
+
+    <div class="alert alert-danger mt-3" role="alert">Input Format : gene_prefix+geneId e.g: Albla_Nc14125180</div>
+    <table class="table table-striped table-sm my-3">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>Name of the Organism</th>
+                <th>Gene Prefix</th>
+                <th>Examples</th>
+                <th width="5%"><i class="far fa-eye-slash hover-link" (click)="toggleTable($event)" title="Show Table Data"></i></th>
+            </tr>                        
+        </thead>
+        <tbody class="sample-table-body" style="display: none">
+            <tr>
+                <td>Aphanomyces invadans</td>
+                <td>Aphin_</td>
+                <td>Aphin_H310_13904</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Aphanomyces astacii</td>
+                <td>Aphas_</td>
+                <td>Aphas_H257_00053</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hyaloperonospora arabidopsidis (Emoy2)</td>
+                <td>Hyaar_Emoy2</td>
+                <td>Hyaar_Emoy2800014</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Albugo laibachii</td>
+                <td>Albla_Nc14</td>
+                <td>Albla_Nc14000370</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora cinnamomi</td>
+                <td>Phyci_</td>
+                <td>Phyci_331428</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora infestans T30-4</td>
+                <td>Phyin_T30-4</td>
+                <td>Phyin_T30-4PITG_00006</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora parasitica INRA-310</td>
+                <td>Phypa_INRA-310</td>
+                <td>Phypa_INRA-310PPTG_00014</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Saprolegnia parasitica CBS223.65</td>
+                <td>Sappa_CBS223.65</td>
+                <td>Sappa_CBS223.65SPRG_00054</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora ramorum</td>
+                <td>Phyra_</td>
+                <td>Phyra_93231</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora sojae</td>
+                <td>Physo_</td>
+                <td>Physo_127034</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora capsici LT1534</td>
+                <td>Phyca_LT1534</td>
+                <td>Phyca_LT1534524845</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Saprolegnia diclina VS20</td>
+                <td>Sapdi_VS20</td>
+                <td>Sapdi_VS20SDRG_00040</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pythium ultimum DAOMBR144</td>
+                <td>Pytul_DAOMBR144</td>
+                <td>Pytul_DAOMBR144PYU1_G000552</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pythium iwayamai DAOM 242034</td>
+                <td>Pytiw_DAOMBR242034</td>
+                <td>Pytiw_DAOMBR242034maker-piw_contig_1-fgenesh-gene-0.12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>P. ultimum var. sporangiiferum</td>
+                <td>Pytul_var.sporangiiferum</td>
+                <td>Pytul_var.sporangiiferummaker-pug3_contig_1-fgenesh-gene-0.38</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pythium arrhenomanes ATCC 12531</td>
+                <td>Pytar_ATCC12531</td>
+                <td>Pytar_ATCC12531maker-par_contig_1-snap-gene-1.7</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pythium aphanidermatum DAOM BR444</td>
+                <td>Pytap_DAOMBR444</td>
+                <td>Pytap_DAOMBR444maker-pag1_scaffold_1-snap-gene-0.65</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pythium irregulare DAOM BR486</td>
+                <td>Pytir_DAOMBR486</td>
+                <td>Pytir_DAOMBR486maker-pir_contig_1-snap-gene-1.28</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pythium vexans DAOM BR484</td>
+                <td>Pytve_DAOMBR484</td>
+                <td>Pytve_DAOMBR484maker-pve_contig_1-snap-gene-1.28</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora agathidicida</td>
+                <td>Phyag_</td>
+                <td>Phyag_g16</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora kernoviae</td>
+                <td>Phyke_</td>
+                <td>Phyke_g158</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora pluvialis</td>
+                <td>Phypl_</td>
+                <td>Phypl_g12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora multivora</td>
+                <td>Phymu_</td>
+                <td>Phymu_g6</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Phytophthora taxon totara</td>
+                <td>Phyta_to_</td>
+                <td>Phyta_totarag5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Plasmopara halstedii</td>
+                <td>Plaha_</td>
+                <td>Plaha_PHALS_12045</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</ng-container>

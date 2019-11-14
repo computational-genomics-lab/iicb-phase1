@@ -1,0 +1,53 @@
+<app-admin-header></app-admin-header>
+
+<div *ngIf="!showForm" class="loader"></div>
+
+<div class="container-fluid full-page-admin">
+    <div class="row">
+        <div class="col my-3">
+            <div class="card">
+                <div class="card-header"><h5 class="m-0">Edit Data Usage Policy</h5></div>
+                <div class="card-body">
+
+                    <form [formGroup]="form" (ngSubmit)="saveContent()" *ngIf="showForm">
+                        <div id="content-block">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th width="20%">Status</th>
+                                        <th>Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of form.get('lines').controls; let i = index;" formArrayName="lines">
+                                        <td [formGroupName]="i">
+                                            <div class="custom-control custom-switch">
+                                                <input class="custom-control-input" id="customSwitch{{ i }}" type="checkbox" formControlName="status">
+                                                <label class="custom-control-label" for="customSwitch{{ i }}">show</label>
+                                            </div>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <textarea formControlName="line" class="form-control" rows="4"></textarea>
+                                        </td>
+                                    </tr>                                
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button [disabled]="loading" class="btn btn-primary">
+                                <span *ngIf="! loading">Save Changes</span>
+                                <span *ngIf="loading">Please wait...</span>
+                            </button>
+                            <a [routerLink]="['/admin/dashboard']" class="btn btn-outline-secondary ml-3">Cancel</a>   
+                            <button (click)="addItem()" type="button" class="btn btn-info float-right">Add New</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<app-admin-footer></app-admin-footer>

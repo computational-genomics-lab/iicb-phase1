@@ -1,0 +1,21 @@
+<div [ngClass]="{'container mb-3': ! fullNav}">
+    <nav class="navbar navbar-light bg-navbar p-0 top-strip">        
+        <ul class="nav text-uppercase">
+            <li class="nav-item">
+                <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="http://www.eumicrobedb.org/eumicrobedb/blast.php" target="_blank">Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" [routerLink]="['/query-builder']">Query</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="http://www.eumicrobedb.org/eumicrobedb/statistics.php" target="_blank">Statistics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="http://www.eumicrobedb.org/eumicrobedb/final_gsv/" target="_blank">Synteny View</a>
+            </li>
+        </ul>        
+    </nav>
+</div>

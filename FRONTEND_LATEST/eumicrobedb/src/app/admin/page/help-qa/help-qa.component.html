@@ -1,0 +1,71 @@
+<app-admin-header></app-admin-header>
+
+<div *ngIf="!showForm" class="loader"></div>
+
+<div class="container-fluid full-page-admin">
+    <div class="row">
+        <div class="col my-3">
+            <form [formGroup]="form" (ngSubmit)="saveContent()">
+                <div class="card">
+                    <div class="card-header"><h5 class="m-0">Edit Help Q&A Page</h5></div>
+                    <div class="card-body">
+
+                        <div id="content-block" *ngIf="showForm">
+                            <div class="like-table">
+                                <div class="like-table-head">
+                                    <div class="like-table-heading">Status</div>
+                                    <div class="like-table-heading">Question Type</div>
+                                    <div class="like-table-heading-group">
+                                        <div class="like-table-heading">Question</div>
+                                        <div class="like-table-heading">Answer</div>
+                                    </div>
+                                </div>
+                                <div class="like-table-body">
+                                    <ng-container formArrayName="items">
+                                        <div class="like-table-row" *ngFor="let item of form.get('items').controls; let i=index">                                        
+                                            <ng-container [formGroupName]="i">
+                                                <div class="like-table-col">
+                                                    <div class="custom-control custom-switch">
+                                                        <input class="custom-control-input" id="customSwitch{{ i }}" type="checkbox" formControlName="Status">
+                                                        <label class="custom-control-label" for="customSwitch{{ i }}">show</label>
+                                                    </div>
+                                                </div>
+                                                <div class="like-table-col">
+                                                    <input class="form-control" type="text" formControlName="Question_type">
+                                                </div>
+                                                <div class="like-table-col" formArrayName="qa">
+                                                    <ng-container *ngFor="let qaItem of item.get('qa').controls; let j=index">
+                                                        <div class="like-table-col-group" [formGroupName]="j">
+                                                            <div>
+                                                                <textarea class="form-control" formControlName="Question"></textarea>
+                                                            </div>
+                                                            <div>
+                                                                <textarea class="form-control" formControlName="Answer"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </ng-container>
+                                                    <button type="button" class="btn btn-secondary btn-sm float-right my-2" (click)="addNewQuestion(item.controls.qa)">Add New Question</button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button [disabled]="loading" class="btn btn-primary">
+                            <span *ngIf="! loading">Save Changes</span>
+                            <span *ngIf="loading">Please wait...</span>
+                        </button>
+                        <a [routerLink]="['/admin/dashboard']" class="btn btn-outline-secondary ml-3">Cancel</a>
+                        <button type="button" class="btn btn-info float-right" (click)="addItem()">Add New</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <pre class="d-none">{{form.value | json}}</pre>
+</div>
+
+<app-admin-footer></app-admin-footer>

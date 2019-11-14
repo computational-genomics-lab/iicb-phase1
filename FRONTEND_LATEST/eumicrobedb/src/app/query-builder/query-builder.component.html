@@ -1,0 +1,78 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div class="container full-page">
+
+    <app-query-builder-form></app-query-builder-form>
+
+    <hr>
+
+    <div class="d-flex flex-row mt-2 no-gutters">
+        <div class="col-md-3">
+            <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+                <li class="nav-item">
+                    <a class="nav-link hover-link active" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-gene-name">Search By Gene Name</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-primary-annotation">Search By Primary Annotation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-genome-location">Search By Genome Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-conserved-regions">Query by conserved regions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-kegg-orthology">Query by KEGG orthology id</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-cluster-id">Search by cluster id</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-cluster-description">Search by cluster Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-protein-domain">Quick Search for Protein Domain/motif/function</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-link" (click)="switchTab($event)" data-toggle="tab" role="tab" aria-controls="tab-secretome">Browse for SECRETOME / PROP / PSORT / SignalP / TMHMM</a>
+                </li>
+            </ul>        
+        </div>
+        <div class="col-md-9">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-gene-name" role="tabpanel">
+                    <app-gene-name></app-gene-name>
+                </div>
+                <div class="tab-pane fade" id="tab-primary-annotation" role="tabpanel">
+                    <app-primary-annotation></app-primary-annotation>
+                </div>
+                <div class="tab-pane fade" id="tab-genome-location" role="tabpanel">
+                    <app-genome-location></app-genome-location>
+                </div>
+                <div class="tab-pane fade" id="tab-conserved-regions" role="tabpanel">
+                    <app-conserved-regions></app-conserved-regions>
+                </div>
+                <div class="tab-pane fade" id="tab-kegg-orthology" role="tabpanel">
+                    <app-kegg-orthology-id></app-kegg-orthology-id>
+                </div>
+                <div class="tab-pane fade" id="tab-cluster-id" role="tabpanel">
+                    <app-cluster-id></app-cluster-id>
+                </div>
+                <div class="tab-pane fade" id="tab-cluster-description" role="tabpanel">
+                    <app-cluster-description></app-cluster-description>
+                </div>
+                <div class="tab-pane fade" id="tab-protein-domain" role="tabpanel">
+                    <app-protein-domain></app-protein-domain>
+                </div>
+                <div class="tab-pane fade" id="tab-secretome" role="tabpanel">
+                    <app-secretome></app-secretome>
+                </div>
+            </div>        
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>

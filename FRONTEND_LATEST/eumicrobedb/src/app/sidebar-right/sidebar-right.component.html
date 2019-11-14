@@ -1,0 +1,37 @@
+<div id="rsidebar">
+    <div class="box">
+        <div class="buffer">
+            <h2>USEFUL TOOLS</h2>
+            <ul class="p-0 mb-0">
+                <li><a href="http://www.eumicrobedb.org/EMBOSS">EMBOSS</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/blast.php">BLAST</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/pair.php">PAIRWISE SEQUENCE ALIGNMENT</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/analyze.php">ANALYZE SEQUENCE</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/matrix.php">BUILD WEIGHT MATRIX</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/dipep.php">CALCULATE DIPEPTIDE FREQUENCY</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/primer-design.php">PRIMER DESIGN</a></li>
+                <li><a href="http://www.eumicrobedb.org/eumicrobedb/gene_predict.php">GENE PREDICTION</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="buffer">
+            <h2>About</h2>
+            <ul class="p-0 mb-0">
+                <li *ngIf="about_feed" [innerHTML]="about_feed"></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="buffer">
+            <h2>Data Usage Policy</h2>
+            <ul class="p-0 mb-0">
+                <li *ngFor="let line of usage_feed">{{ line.Line_Text }}</li>
+            </ul>
+        </div>
+    </div>
+</div>

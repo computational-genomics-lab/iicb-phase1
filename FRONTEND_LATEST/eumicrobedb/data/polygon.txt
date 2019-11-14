@@ -1,0 +1,1 @@
+<polygon fill="yellow" stroke="blue" stroke-width="2" points="6,17 15,10 15,25"></polygon>

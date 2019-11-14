@@ -1,0 +1,87 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div class="loader" *ngIf="loading"></div>
+
+<div class="container full-page">
+    <div class="row no-gutters">
+        <div class="col-md-2 mr-1">
+            <app-sidebar-left></app-sidebar-left>
+        </div>
+        <div class="col">
+            <div id="content">                
+
+                <!-- begin featured content -->
+                <div class="box">
+                    <div class="buffer">
+                        <h2>Genomes Available</h2>
+                        <div class="tab tab-horiz">
+                            <ul class="tab-legend">
+                                <li class="active" (click)="toggleTab($event)" data-show="0" >Tree View</li>
+                                <li (click)="toggleTab($event)" data-show="1">List View</li>
+                            </ul>
+                        </div>
+                        <div class="menu_view">
+                            <div class="tab tab-horiz">
+                                <ul class="tab-content">
+                                    <li class="active" style="display: list-item;">
+                                        <div id="div_tree">
+                                            <!--Tree View Content-->
+                                            <ul id="treeItems" class="list-unstyled">
+                                                <li *ngFor="let item of treeItems">
+                                                    <i attr.data-id="{{ item.id }}" (click)="toggleiChild($event)" class="far fa-plus-square"></i>
+                                                    <label attr.data-id="{{ item.id }}" class="ml-2" (click)="toggleChild($event)" >{{ item.label }} </label>
+
+                                                    <ul class="d-none" id="{{ item.id }}">
+                                                        <li *ngFor="let item1 of item.genus_list">
+                                                            <i attr.data-id="{{ item1.id }}" (click)="toggleiChild($event)" class="far fa-plus-square"></i>
+                                                            <label attr.data-id="{{ item1.id }}" class="ml-2" (click)="toggleChild($event)">{{ item1.label }}</label>
+
+                                                            <ul class="d-none last mb-2" id="{{ item1.id }}">
+                                                                <li *ngFor="let item2 of item1.species" class="mb-1">
+                                                                    <a (click)="viewList(item2)">{{ item2.label }} <span *ngIf="item2.star" class="text-danger">{{ item2.star }}</span></a>
+                                                                </li>
+                                                            </ul>
+
+                                                        </li>
+                                                    </ul>
+
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+                                    <li class="d-none">
+                                        <!--List View-->
+                                        <div id="list-wrapper">
+                                            <ul id="listItems" class="list-unstyled">
+                                                <li *ngFor="let item of listItems">                                                
+                                                    <a class="font-italic" (click)="viewList(item)">{{ item.label }} <span *ngIf="item.star" class="text-danger">{{ item.star }}</span></a>  
+                                                </li>                                            
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size:14px; color: #333333; margin-top: 20px ">
+                    <div style="margin-bottom: 1em">If you are using <i>EumicrobeDB</i> in your research, please cite the following publication:</div>
+                    <p>
+                        Panda, A., Sen, D., Ghosh, A., Gupta, A., C., M. M., Prakash Mishra, G., Singh, D., Ye, W., Tyler, B. M. and Tripathy, S. (2016),
+                        <br> EumicrobeDBLite: a lightweight genomic resource and analytic platform for draft oomycete genomes.
+                        <br>
+                        <i>Molecular Plant Pathology</i> doi: <a href="http://onlinelibrary.wiley.com/doi/10.1111/mpp.12505/abstract">10.1111/mpp.12505</a>
+                    </p>
+                </div>
+                <!-- end featured content -->
+            </div>
+        </div>
+        <div class="col-md-4 ml-1">
+            <app-sidebar-right></app-sidebar-right>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

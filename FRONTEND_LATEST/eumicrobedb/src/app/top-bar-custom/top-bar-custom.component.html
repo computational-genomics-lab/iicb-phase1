@@ -1,0 +1,61 @@
+<header>
+    <nav class="navbar navbar-dark topbar-dark py-0">
+        <div class="container">
+            <ul class="nav nav-topbar text-uppercase">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link text-white" [routerLink]="['/about-us']">About Us</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link text-white" [routerLink]="['/help']">Help</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link text-white" [routerLink]="['/download']">Download</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link text-white" [routerLink]="['/contact']">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav nav-topbar text-uppercase">
+                <li class="nav-item" *ngIf="! isUserLoggedIn" routerLinkActive="active">
+                    <a class="nav-link text-white font-weight-bold" [routerLink]="['/login']">Login</a>
+                </li>
+                <li *ngIf="isUserLoggedIn">
+                    <a class="nav-link text-white font-weight-bold" [routerLink]="['/admin/dashboard']">Dashboard</a>
+                </li>
+                <li *ngIf="isUserLoggedIn">
+                    <a class="nav-link text-white font-weight-bold logout-link" (click)="onLogout()">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <div class="col logo-box">
+                <a class="py-3" [routerLink]="['/']">
+                    <img src="../../assets/images/logo.png" alt="logo" class="logo pl-3">
+                </a>
+            </div>
+            <div class="col-6">
+                <div class="row m-0 py-1 h-100 align-items-center genome-infobox">
+                    <div class="col-md-12 my-1">
+                        <strong>Move: </strong>
+                        <button type="button" class="genome-action-btn px-2 py-1 mx-1" title="Move Left" (click)="moveLeft()"><</button>
+                        <button type="button" class="genome-action-btn px-2 py-1 ml-1 mr-3" title="Move Right" (click)="moveRight()">></button>
+                        <button type="button" class="genome-action-btn px-2 py-1 mx-1" (click)="prevScaffold()">&laquo; Prev Scaffold</button>
+                        <button type="button" class="genome-action-btn px-2 py-1 mx-1" (click)="nextScaffold()">Next Scaffold &raquo;</button>             
+                    </div>
+                    <div class="col-md-12 my-1">
+                        <strong>Position: </strong> 
+                        <input type="text" size="30" class="genome-position" value="{{ urlParams.scaffold ? urlParams.scaffold : 'Scaffold_1' }}:1-150000">
+                        <strong class="ml-3">Size: </strong>                     
+                        <input type="text" size="15" class="genome-size" value="150000">                    
+                    </div>
+                    <div class="col-md-12 my-1">
+                        <strong>Feature: </strong> 
+                        <input type="text" size="50" class="genome-feature-label">
+                    </div>
+                </div>
+            </div>     
+        </div>    
+    </div>        
+</header>

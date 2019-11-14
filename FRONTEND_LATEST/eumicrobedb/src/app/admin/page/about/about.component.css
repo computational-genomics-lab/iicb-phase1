@@ -1,0 +1,16 @@
+.custom-control {
+    line-height: 2;
+}
+.btn-change {
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: opacity 1.5s;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;    
+}
+.profile-image-wrapper:hover .btn-change {
+    opacity: 1;
+}

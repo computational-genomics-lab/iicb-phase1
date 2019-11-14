@@ -1,0 +1,188 @@
+##gff-version 3
+#!gff-spec-version 1.20
+#!processor NCBI annotwriter
+##sequence-region NC_019428.1 1 80384
+##species http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=46234
+NC_019428.1	RefSeq	region	1	80384	.	+	.	ID=id0;Dbxref=taxon:46234;Is_circular=true;country=Finland: Lake Vesijarvi;gbkey=Src;genome=plasmid;mol_type=genomic DNA;plasmid-name=pANA01;strain=90
+NC_019428.1	RefSeq	gene	255	4808	.	+	.	ID=gene0;Name=ANA_P10001;Dbxref=GeneID:13986532;gbkey=Gene;locus_tag=ANA_P10001
+NC_019428.1	RefSeq	CDS	255	4808	.	+	0	ID=cds0;Name=YP_006998278.1;Parent=gene0;Dbxref=Genbank:YP_006998278.1,GeneID:13986532;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998278.1;transl_table=11
+NC_019428.1	RefSeq	gene	4915	5226	.	-	.	ID=gene1;Name=ANA_P10002;Dbxref=GeneID:13986440;gbkey=Gene;locus_tag=ANA_P10002
+NC_019428.1	RefSeq	CDS	4915	5226	.	-	0	ID=cds1;Name=YP_006998279.1;Parent=gene1;Dbxref=Genbank:YP_006998279.1,GeneID:13986440;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998279.1;transl_table=11
+NC_019428.1	RefSeq	gene	5752	7329	.	+	.	ID=gene2;Name=ANA_P10003;Dbxref=GeneID:13986441;gbkey=Gene;locus_tag=ANA_P10003
+NC_019428.1	RefSeq	CDS	5752	7329	.	+	0	ID=cds2;Name=YP_006998280.1;Parent=gene2;Dbxref=Genbank:YP_006998280.1,GeneID:13986441;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998280.1;transl_table=11
+NC_019428.1	RefSeq	gene	7450	7641	.	-	.	ID=gene3;Name=ANA_P10004;Dbxref=GeneID:13986442;gbkey=Gene;locus_tag=ANA_P10004
+NC_019428.1	RefSeq	CDS	7450	7641	.	-	0	ID=cds3;Name=YP_006998281.1;Parent=gene3;Dbxref=Genbank:YP_006998281.1,GeneID:13986442;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998281.1;transl_table=11
+NC_019428.1	RefSeq	gene	8125	8313	.	-	.	ID=gene4;Name=ANA_P10005;Dbxref=GeneID:13986443;gbkey=Gene;locus_tag=ANA_P10005
+NC_019428.1	RefSeq	CDS	8125	8313	.	-	0	ID=cds4;Name=YP_006998282.1;Parent=gene4;Dbxref=Genbank:YP_006998282.1,GeneID:13986443;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998282.1;transl_table=11
+NC_019428.1	RefSeq	gene	8493	9446	.	+	.	ID=gene5;Name=ANA_P10006;Dbxref=GeneID:13986444;gbkey=Gene;locus_tag=ANA_P10006
+NC_019428.1	RefSeq	CDS	8493	9446	.	+	0	ID=cds5;Name=YP_006998283.1;Parent=gene5;Dbxref=Genbank:YP_006998283.1,GeneID:13986444;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998283.1;transl_table=11
+NC_019428.1	RefSeq	gene	9574	9927	.	+	.	ID=gene6;Name=ANA_P10007;Dbxref=GeneID:13986445;gbkey=Gene;locus_tag=ANA_P10007
+NC_019428.1	RefSeq	CDS	9574	9927	.	+	0	ID=cds6;Name=YP_006998284.1;Parent=gene6;Dbxref=Genbank:YP_006998284.1,GeneID:13986445;gbkey=CDS;product=HhH-GPD domain-containing protein;protein_id=YP_006998284.1;transl_table=11
+NC_019428.1	RefSeq	gene	10345	10902	.	+	.	ID=gene7;Name=ANA_P10008;Dbxref=GeneID:13986446;gbkey=Gene;locus_tag=ANA_P10008
+NC_019428.1	RefSeq	CDS	10345	10902	.	+	0	ID=cds7;Name=YP_006998285.1;Parent=gene7;Dbxref=Genbank:YP_006998285.1,GeneID:13986446;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998285.1;transl_table=11
+NC_019428.1	RefSeq	gene	10905	11867	.	-	.	ID=gene8;Name=ANA_P10009;Dbxref=GeneID:13986447;gbkey=Gene;locus_tag=ANA_P10009
+NC_019428.1	RefSeq	CDS	10905	11867	.	-	0	ID=cds8;Name=YP_006998286.1;Parent=gene8;Dbxref=Genbank:YP_006998286.1,GeneID:13986447;gbkey=CDS;product=phage integrase;protein_id=YP_006998286.1;transl_table=11
+NC_019428.1	RefSeq	gene	12257	12763	.	+	.	ID=gene9;Name=ANA_P10010;Dbxref=GeneID:13986448;gbkey=Gene;locus_tag=ANA_P10010
+NC_019428.1	RefSeq	CDS	12257	12763	.	+	0	ID=cds9;Name=YP_006998287.1;Parent=gene9;Dbxref=Genbank:YP_006998287.1,GeneID:13986448;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998287.1;transl_table=11
+NC_019428.1	RefSeq	gene	12862	13143	.	-	.	ID=gene10;Name=ANA_P10011;Dbxref=GeneID:13986449;gbkey=Gene;locus_tag=ANA_P10011
+NC_019428.1	RefSeq	CDS	12862	13143	.	-	0	ID=cds10;Name=YP_006998288.1;Parent=gene10;Dbxref=Genbank:YP_006998288.1,GeneID:13986449;gbkey=CDS;product=HNH endonuclease;protein_id=YP_006998288.1;transl_table=11
+NC_019428.1	RefSeq	gene	13403	14356	.	+	.	ID=gene11;Name=ANA_P10012;Dbxref=GeneID:13986450;gbkey=Gene;locus_tag=ANA_P10012
+NC_019428.1	RefSeq	CDS	13403	14356	.	+	0	ID=cds11;Name=YP_006998289.1;Parent=gene11;Dbxref=Genbank:YP_006998289.1,GeneID:13986450;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998289.1;transl_table=11
+NC_019428.1	RefSeq	gene	14503	15387	.	+	.	ID=gene12;Name=ANA_P10013;Note=hypothetical protein%7Ewith internal stop codon;Dbxref=GeneID:13986451;gbkey=Gene;locus_tag=ANA_P10013;pseudo=true
+NC_019428.1	RefSeq	gene	15548	15925	.	+	.	ID=gene13;Name=ANA_P10014;Dbxref=GeneID:13986452;gbkey=Gene;locus_tag=ANA_P10014
+NC_019428.1	RefSeq	CDS	15548	15925	.	+	0	ID=cds12;Name=YP_006998290.1;Parent=gene13;Dbxref=Genbank:YP_006998290.1,GeneID:13986452;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998290.1;transl_table=11
+NC_019428.1	RefSeq	gene	16008	18650	.	-	.	ID=gene14;Name=ANA_P10015;Dbxref=GeneID:13986453;gbkey=Gene;locus_tag=ANA_P10015
+NC_019428.1	RefSeq	CDS	16008	18650	.	-	0	ID=cds13;Name=YP_006998291.1;Parent=gene14;Dbxref=Genbank:YP_006998291.1,GeneID:13986453;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998291.1;transl_table=11
+NC_019428.1	RefSeq	gene	18896	22360	.	-	.	ID=gene15;Name=ANA_P10016;Dbxref=GeneID:13986454;gbkey=Gene;locus_tag=ANA_P10016
+NC_019428.1	RefSeq	CDS	18896	22360	.	-	0	ID=cds14;Name=YP_006998292.1;Parent=gene15;Dbxref=Genbank:YP_006998292.1,GeneID:13986454;gbkey=CDS;product=caspase domain-containing protein;protein_id=YP_006998292.1;transl_table=11
+NC_019428.1	RefSeq	gene	22753	23097	.	+	.	ID=gene16;Name=ANA_P10017;Dbxref=GeneID:13986455;gbkey=Gene;locus_tag=ANA_P10017
+NC_019428.1	RefSeq	CDS	22753	23097	.	+	0	ID=cds15;Name=YP_006998293.1;Parent=gene16;Dbxref=Genbank:YP_006998293.1,GeneID:13986455;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998293.1;transl_table=11
+NC_019428.1	RefSeq	gene	23132	24043	.	-	.	ID=gene17;Name=ANA_P10018;Dbxref=GeneID:13986456;gbkey=Gene;locus_tag=ANA_P10018
+NC_019428.1	RefSeq	CDS	23132	24043	.	-	0	ID=cds16;Name=YP_006998294.1;Parent=gene17;Dbxref=Genbank:YP_006998294.1,GeneID:13986456;gbkey=CDS;product=ParB family partitioning protein;protein_id=YP_006998294.1;transl_table=11
+NC_019428.1	RefSeq	gene	24043	24792	.	-	.	ID=gene18;Name=ANA_P10019;Dbxref=GeneID:13986457;gbkey=Gene;locus_tag=ANA_P10019
+NC_019428.1	RefSeq	CDS	24043	24792	.	-	0	ID=cds17;Name=YP_006998295.1;Parent=gene18;Dbxref=Genbank:YP_006998295.1,GeneID:13986457;gbkey=CDS;product=ParA family partitioning protein;protein_id=YP_006998295.1;transl_table=11
+NC_019428.1	RefSeq	gene	25200	25334	.	+	.	ID=gene19;Name=ANA_P10020;Note=hypothetical protein%7Epartail ORF%2C truncated;Dbxref=GeneID:13986458;gbkey=Gene;locus_tag=ANA_P10020;pseudo=true
+NC_019428.1	RefSeq	gene	25345	26973	.	+	.	ID=gene20;Name=ANA_P10021;Dbxref=GeneID:13986459;gbkey=Gene;locus_tag=ANA_P10021
+NC_019428.1	RefSeq	CDS	25345	26973	.	+	0	ID=cds18;Name=YP_006998296.1;Parent=gene20;Dbxref=Genbank:YP_006998296.1,GeneID:13986459;gbkey=CDS;product=adenine deaminase;protein_id=YP_006998296.1;transl_table=11
+NC_019428.1	RefSeq	gene	27115	27942	.	+	.	ID=gene21;Name=ANA_P10022;Dbxref=GeneID:13986460;gbkey=Gene;locus_tag=ANA_P10022
+NC_019428.1	RefSeq	CDS	27115	27942	.	+	0	ID=cds19;Name=YP_006998297.1;Parent=gene21;Dbxref=Genbank:YP_006998297.1,GeneID:13986460;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998297.1;transl_table=11
+NC_019428.1	RefSeq	gene	27943	28452	.	-	.	ID=gene22;Name=ANA_P10023;Dbxref=GeneID:13986461;gbkey=Gene;locus_tag=ANA_P10023
+NC_019428.1	RefSeq	CDS	27943	28452	.	-	0	ID=cds20;Name=YP_006998298.1;Parent=gene22;Note=similar to SNase-like staphylococcal nuclease;Dbxref=Genbank:YP_006998298.1,GeneID:13986461;gbkey=CDS;product=SNase-like nuclease;protein_id=YP_006998298.1;transl_table=11
+NC_019428.1	RefSeq	gene	28711	29670	.	-	.	ID=gene23;Name=ANA_P10024;Dbxref=GeneID:13986462;gbkey=Gene;locus_tag=ANA_P10024
+NC_019428.1	RefSeq	CDS	28711	29670	.	-	0	ID=cds21;Name=YP_006998299.1;Parent=gene23;Dbxref=Genbank:YP_006998299.1,GeneID:13986462;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998299.1;transl_table=11
+NC_019428.1	RefSeq	gene	29757	30800	.	-	.	ID=gene24;Name=ANA_P10025;Dbxref=GeneID:13986463;gbkey=Gene;locus_tag=ANA_P10025
+NC_019428.1	RefSeq	CDS	29757	30800	.	-	0	ID=cds22;Name=YP_006998300.1;Parent=gene24;Dbxref=Genbank:YP_006998300.1,GeneID:13986463;gbkey=CDS;product=phage Gp37Gp68 family protein;protein_id=YP_006998300.1;transl_table=11
+NC_019428.1	RefSeq	gene	30803	31012	.	-	.	ID=gene25;Name=ANA_P10026;Dbxref=GeneID:13986464;gbkey=Gene;locus_tag=ANA_P10026
+NC_019428.1	RefSeq	CDS	30803	31012	.	-	0	ID=cds23;Name=YP_006998301.1;Parent=gene25;Dbxref=Genbank:YP_006998301.1,GeneID:13986464;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998301.1;transl_table=11
+NC_019428.1	RefSeq	gene	31099	31374	.	-	.	ID=gene26;Name=ANA_P10027;Dbxref=GeneID:13986465;gbkey=Gene;locus_tag=ANA_P10027
+NC_019428.1	RefSeq	CDS	31099	31374	.	-	0	ID=cds24;Name=YP_006998302.1;Parent=gene26;Dbxref=Genbank:YP_006998302.1,GeneID:13986465;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998302.1;transl_table=11
+NC_019428.1	RefSeq	gene	31468	31746	.	-	.	ID=gene27;Name=ANA_P10028;Dbxref=GeneID:13986466;gbkey=Gene;locus_tag=ANA_P10028
+NC_019428.1	RefSeq	CDS	31468	31746	.	-	0	ID=cds25;Name=YP_006998303.1;Parent=gene27;Dbxref=Genbank:YP_006998303.1,GeneID:13986466;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998303.1;transl_table=11
+NC_019428.1	RefSeq	gene	31919	32263	.	-	.	ID=gene28;Name=ANA_P10029;Dbxref=GeneID:13986467;gbkey=Gene;locus_tag=ANA_P10029
+NC_019428.1	RefSeq	CDS	31919	32263	.	-	0	ID=cds26;Name=YP_006998304.1;Parent=gene28;Dbxref=Genbank:YP_006998304.1,GeneID:13986467;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998304.1;transl_table=11
+NC_019428.1	RefSeq	gene	32339	32731	.	-	.	ID=gene29;Name=ANA_P10030;Dbxref=GeneID:13986468;gbkey=Gene;locus_tag=ANA_P10030
+NC_019428.1	RefSeq	CDS	32339	32731	.	-	0	ID=cds27;Name=YP_006998305.1;Parent=gene29;Dbxref=Genbank:YP_006998305.1,GeneID:13986468;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998305.1;transl_table=11
+NC_019428.1	RefSeq	gene	32797	33009	.	-	.	ID=gene30;Name=ANA_P10031;Dbxref=GeneID:13986469;gbkey=Gene;locus_tag=ANA_P10031
+NC_019428.1	RefSeq	CDS	32797	33009	.	-	0	ID=cds28;Name=YP_006998306.1;Parent=gene30;Dbxref=Genbank:YP_006998306.1,GeneID:13986469;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998306.1;transl_table=11
+NC_019428.1	RefSeq	gene	33075	33791	.	-	.	ID=gene31;Name=ANA_P10032;Dbxref=GeneID:13986470;gbkey=Gene;locus_tag=ANA_P10032
+NC_019428.1	RefSeq	CDS	33075	33791	.	-	0	ID=cds29;Name=YP_006998307.1;Parent=gene31;Dbxref=Genbank:YP_006998307.1,GeneID:13986470;gbkey=CDS;product=exonuclease;protein_id=YP_006998307.1;transl_table=11
+NC_019428.1	RefSeq	gene	33895	34209	.	-	.	ID=gene32;Name=ANA_P10033;Dbxref=GeneID:13986471;gbkey=Gene;locus_tag=ANA_P10033
+NC_019428.1	RefSeq	CDS	33895	34209	.	-	0	ID=cds30;Name=YP_006998308.1;Parent=gene32;Dbxref=Genbank:YP_006998308.1,GeneID:13986471;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998308.1;transl_table=11
+NC_019428.1	RefSeq	gene	34358	35053	.	-	.	ID=gene33;Name=ANA_P10034;Dbxref=GeneID:13986472;gbkey=Gene;locus_tag=ANA_P10034
+NC_019428.1	RefSeq	CDS	34358	35053	.	-	0	ID=cds31;Name=YP_006998309.1;Parent=gene33;Dbxref=Genbank:YP_006998309.1,GeneID:13986472;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998309.1;transl_table=11
+NC_019428.1	RefSeq	gene	35199	35654	.	-	.	ID=gene34;Name=ANA_P10035;Dbxref=GeneID:13986473;gbkey=Gene;locus_tag=ANA_P10035
+NC_019428.1	RefSeq	CDS	35199	35654	.	-	0	ID=cds32;Name=YP_006998310.1;Parent=gene34;Dbxref=Genbank:YP_006998310.1,GeneID:13986473;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998310.1;transl_table=11
+NC_019428.1	RefSeq	gene	35695	36207	.	-	.	ID=gene35;Name=ANA_P10036;Dbxref=GeneID:13986474;gbkey=Gene;locus_tag=ANA_P10036
+NC_019428.1	RefSeq	CDS	35695	36207	.	-	0	ID=cds33;Name=YP_006998311.1;Parent=gene35;Dbxref=Genbank:YP_006998311.1,GeneID:13986474;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998311.1;transl_table=11
+NC_019428.1	RefSeq	gene	36211	36450	.	-	.	ID=gene36;Name=ANA_P10037;Dbxref=GeneID:13986475;gbkey=Gene;locus_tag=ANA_P10037
+NC_019428.1	RefSeq	CDS	36211	36450	.	-	0	ID=cds34;Name=YP_006998312.1;Parent=gene36;Dbxref=Genbank:YP_006998312.1,GeneID:13986475;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998312.1;transl_table=11
+NC_019428.1	RefSeq	gene	36455	36748	.	-	.	ID=gene37;Name=ANA_P10038;Dbxref=GeneID:13986476;gbkey=Gene;locus_tag=ANA_P10038
+NC_019428.1	RefSeq	CDS	36455	36748	.	-	0	ID=cds35;Name=YP_006998313.1;Parent=gene37;Dbxref=Genbank:YP_006998313.1,GeneID:13986476;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998313.1;transl_table=11
+NC_019428.1	RefSeq	gene	36684	37022	.	-	.	ID=gene38;Name=ANA_P10039;Dbxref=GeneID:13986477;gbkey=Gene;locus_tag=ANA_P10039
+NC_019428.1	RefSeq	CDS	36684	37022	.	-	0	ID=cds36;Name=YP_006998314.1;Parent=gene38;Dbxref=Genbank:YP_006998314.1,GeneID:13986477;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998314.1;transl_table=11
+NC_019428.1	RefSeq	gene	37063	37545	.	-	.	ID=gene39;Name=ANA_P10040;Dbxref=GeneID:13986478;gbkey=Gene;locus_tag=ANA_P10040
+NC_019428.1	RefSeq	CDS	37063	37545	.	-	0	ID=cds37;Name=YP_006998315.1;Parent=gene39;Dbxref=Genbank:YP_006998315.1,GeneID:13986478;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998315.1;transl_table=11
+NC_019428.1	RefSeq	gene	37740	38027	.	-	.	ID=gene40;Name=ANA_P10041;Dbxref=GeneID:13986479;gbkey=Gene;locus_tag=ANA_P10041
+NC_019428.1	RefSeq	CDS	37740	38027	.	-	0	ID=cds38;Name=YP_006998316.1;Parent=gene40;Dbxref=Genbank:YP_006998316.1,GeneID:13986479;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998316.1;transl_table=11
+NC_019428.1	RefSeq	gene	38120	38572	.	-	.	ID=gene41;Name=ANA_P10042;Dbxref=GeneID:13986480;gbkey=Gene;locus_tag=ANA_P10042
+NC_019428.1	RefSeq	CDS	38120	38572	.	-	0	ID=cds39;Name=YP_006998317.1;Parent=gene41;Dbxref=Genbank:YP_006998317.1,GeneID:13986480;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998317.1;transl_table=11
+NC_019428.1	RefSeq	gene	38675	39202	.	-	.	ID=gene42;Name=ANA_P10043;Dbxref=GeneID:13986481;gbkey=Gene;locus_tag=ANA_P10043
+NC_019428.1	RefSeq	CDS	38675	39202	.	-	0	ID=cds40;Name=YP_006998318.1;Parent=gene42;Dbxref=Genbank:YP_006998318.1,GeneID:13986481;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998318.1;transl_table=11
+NC_019428.1	RefSeq	gene	39289	39393	.	-	.	ID=gene43;Name=ANA_P10044;Dbxref=GeneID:13986482;gbkey=Gene;locus_tag=ANA_P10044
+NC_019428.1	RefSeq	CDS	39289	39393	.	-	0	ID=cds41;Name=YP_006998319.1;Parent=gene43;Dbxref=Genbank:YP_006998319.1,GeneID:13986482;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998319.1;transl_table=11
+NC_019428.1	RefSeq	gene	39415	39972	.	-	.	ID=gene44;Name=ANA_P10045;Dbxref=GeneID:13986483;gbkey=Gene;locus_tag=ANA_P10045
+NC_019428.1	RefSeq	CDS	39415	39972	.	-	0	ID=cds42;Name=YP_006998320.1;Parent=gene44;Dbxref=Genbank:YP_006998320.1,GeneID:13986483;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998320.1;transl_table=11
+NC_019428.1	RefSeq	gene	40069	40368	.	-	.	ID=gene45;Name=ANA_P10046;Dbxref=GeneID:13986484;gbkey=Gene;locus_tag=ANA_P10046
+NC_019428.1	RefSeq	CDS	40069	40368	.	-	0	ID=cds43;Name=YP_006998321.1;Parent=gene45;Dbxref=Genbank:YP_006998321.1,GeneID:13986484;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998321.1;transl_table=11
+NC_019428.1	RefSeq	gene	40458	40814	.	-	.	ID=gene46;Name=ANA_P10047;Dbxref=GeneID:13986485;gbkey=Gene;locus_tag=ANA_P10047
+NC_019428.1	RefSeq	CDS	40458	40814	.	-	0	ID=cds44;Name=YP_006998322.1;Parent=gene46;Dbxref=Genbank:YP_006998322.1,GeneID:13986485;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998322.1;transl_table=11
+NC_019428.1	RefSeq	gene	41131	42078	.	+	.	ID=gene47;Name=ANA_P10048;Dbxref=GeneID:13986486;gbkey=Gene;locus_tag=ANA_P10048
+NC_019428.1	RefSeq	CDS	41131	42078	.	+	0	ID=cds45;Name=YP_006998323.1;Parent=gene47;Dbxref=Genbank:YP_006998323.1,GeneID:13986486;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998323.1;transl_table=11
+NC_019428.1	RefSeq	gene	42181	42573	.	-	.	ID=gene48;Name=ANA_P10049;Dbxref=GeneID:13986487;gbkey=Gene;locus_tag=ANA_P10049
+NC_019428.1	RefSeq	CDS	42181	42573	.	-	0	ID=cds46;Name=YP_006998324.1;Parent=gene48;Dbxref=Genbank:YP_006998324.1,GeneID:13986487;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998324.1;transl_table=11
+NC_019428.1	RefSeq	gene	42672	43058	.	-	.	ID=gene49;Name=ANA_P10050;Dbxref=GeneID:13986488;gbkey=Gene;locus_tag=ANA_P10050
+NC_019428.1	RefSeq	CDS	42672	43058	.	-	0	ID=cds47;Name=YP_006998325.1;Parent=gene49;Dbxref=Genbank:YP_006998325.1,GeneID:13986488;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998325.1;transl_table=11
+NC_019428.1	RefSeq	gene	43238	43462	.	-	.	ID=gene50;Name=ANA_P10051;Dbxref=GeneID:13986489;gbkey=Gene;locus_tag=ANA_P10051
+NC_019428.1	RefSeq	CDS	43238	43462	.	-	0	ID=cds48;Name=YP_006998326.1;Parent=gene50;Dbxref=Genbank:YP_006998326.1,GeneID:13986489;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998326.1;transl_table=11
+NC_019428.1	RefSeq	gene	43549	44688	.	+	.	ID=gene51;Name=ANA_P10052;Dbxref=GeneID:13986490;gbkey=Gene;locus_tag=ANA_P10052
+NC_019428.1	RefSeq	CDS	43549	44688	.	+	0	ID=cds49;Name=YP_006998327.1;Parent=gene51;Dbxref=Genbank:YP_006998327.1,GeneID:13986490;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998327.1;transl_table=11
+NC_019428.1	RefSeq	gene	44891	45634	.	+	.	ID=gene52;Name=ANA_P10053;Dbxref=GeneID:13986491;gbkey=Gene;locus_tag=ANA_P10053
+NC_019428.1	RefSeq	CDS	44891	45634	.	+	0	ID=cds50;Name=YP_006998328.1;Parent=gene52;Dbxref=Genbank:YP_006998328.1,GeneID:13986491;gbkey=CDS;product=LAGLIDADG homing endonuclease;protein_id=YP_006998328.1;transl_table=11
+NC_019428.1	RefSeq	gene	45831	46052	.	-	.	ID=gene53;Name=ANA_P10054;Dbxref=GeneID:13986492;gbkey=Gene;locus_tag=ANA_P10054
+NC_019428.1	RefSeq	CDS	45831	46052	.	-	0	ID=cds51;Name=YP_006998329.1;Parent=gene53;Dbxref=Genbank:YP_006998329.1,GeneID:13986492;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998329.1;transl_table=11
+NC_019428.1	RefSeq	gene	46721	47083	.	-	.	ID=gene54;Name=ANA_P10055;Dbxref=GeneID:13986493;gbkey=Gene;locus_tag=ANA_P10055
+NC_019428.1	RefSeq	CDS	46721	47083	.	-	0	ID=cds52;Name=YP_006998330.1;Parent=gene54;Dbxref=Genbank:YP_006998330.1,GeneID:13986493;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998330.1;transl_table=11
+NC_019428.1	RefSeq	gene	47243	47617	.	-	.	ID=gene55;Name=ANA_P10056;Dbxref=GeneID:13986494;gbkey=Gene;locus_tag=ANA_P10056
+NC_019428.1	RefSeq	CDS	47243	47617	.	-	0	ID=cds53;Name=YP_006998331.1;Parent=gene55;Dbxref=Genbank:YP_006998331.1,GeneID:13986494;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998331.1;transl_table=11
+NC_019428.1	RefSeq	gene	47874	48479	.	-	.	ID=gene56;Name=ANA_P10057;Dbxref=GeneID:13986495;gbkey=Gene;locus_tag=ANA_P10057
+NC_019428.1	RefSeq	CDS	47874	48479	.	-	0	ID=cds54;Name=YP_006998332.1;Parent=gene56;Dbxref=Genbank:YP_006998332.1,GeneID:13986495;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998332.1;transl_table=11
+NC_019428.1	RefSeq	gene	48883	49380	.	-	.	ID=gene57;Name=ANA_P10058;Dbxref=GeneID:13986496;gbkey=Gene;locus_tag=ANA_P10058
+NC_019428.1	RefSeq	CDS	48883	49380	.	-	0	ID=cds55;Name=YP_006998333.1;Parent=gene57;Dbxref=Genbank:YP_006998333.1,GeneID:13986496;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998333.1;transl_table=11
+NC_019428.1	RefSeq	gene	49437	49688	.	-	.	ID=gene58;Name=ANA_P10059;Dbxref=GeneID:13986497;gbkey=Gene;locus_tag=ANA_P10059
+NC_019428.1	RefSeq	CDS	49437	49688	.	-	0	ID=cds56;Name=YP_006998334.1;Parent=gene58;Dbxref=Genbank:YP_006998334.1,GeneID:13986497;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998334.1;transl_table=11
+NC_019428.1	RefSeq	gene	49906	50223	.	-	.	ID=gene59;Name=ANA_P10060;Dbxref=GeneID:13986498;gbkey=Gene;locus_tag=ANA_P10060
+NC_019428.1	RefSeq	CDS	49906	50223	.	-	0	ID=cds57;Name=YP_006998335.1;Parent=gene59;Dbxref=Genbank:YP_006998335.1,GeneID:13986498;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998335.1;transl_table=11
+NC_019428.1	RefSeq	gene	50594	50962	.	-	.	ID=gene60;Name=ANA_P10061;Dbxref=GeneID:13986499;gbkey=Gene;locus_tag=ANA_P10061
+NC_019428.1	RefSeq	CDS	50594	50962	.	-	0	ID=cds58;Name=YP_006998336.1;Parent=gene60;Dbxref=Genbank:YP_006998336.1,GeneID:13986499;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998336.1;transl_table=11
+NC_019428.1	RefSeq	gene	51217	51465	.	+	.	ID=gene61;Name=ANA_P10062;Dbxref=GeneID:13986500;gbkey=Gene;locus_tag=ANA_P10062
+NC_019428.1	RefSeq	CDS	51217	51465	.	+	0	ID=cds59;Name=YP_006998337.1;Parent=gene61;Dbxref=Genbank:YP_006998337.1,GeneID:13986500;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998337.1;transl_table=11
+NC_019428.1	RefSeq	gene	51468	52043	.	+	.	ID=gene62;Name=ANA_P10063;Dbxref=GeneID:13986501;gbkey=Gene;locus_tag=ANA_P10063
+NC_019428.1	RefSeq	CDS	51468	52043	.	+	0	ID=cds60;Name=YP_006998338.1;Parent=gene62;Dbxref=Genbank:YP_006998338.1,GeneID:13986501;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998338.1;transl_table=11
+NC_019428.1	RefSeq	gene	52040	52966	.	+	.	ID=gene63;Name=ANA_P10064;Dbxref=GeneID:13986502;gbkey=Gene;locus_tag=ANA_P10064
+NC_019428.1	RefSeq	CDS	52040	52966	.	+	0	ID=cds61;Name=YP_006998339.1;Parent=gene63;Dbxref=Genbank:YP_006998339.1,GeneID:13986502;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998339.1;transl_table=11
+NC_019428.1	RefSeq	gene	52941	53411	.	+	.	ID=gene64;Name=ANA_P10065;Dbxref=GeneID:13986503;gbkey=Gene;locus_tag=ANA_P10065
+NC_019428.1	RefSeq	CDS	52941	53411	.	+	0	ID=cds62;Name=YP_006998340.1;Parent=gene64;Dbxref=Genbank:YP_006998340.1,GeneID:13986503;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998340.1;transl_table=11
+NC_019428.1	RefSeq	gene	53413	54939	.	+	.	ID=gene65;Name=ANA_P10066;Dbxref=GeneID:13986504;gbkey=Gene;locus_tag=ANA_P10066
+NC_019428.1	RefSeq	CDS	53413	54939	.	+	0	ID=cds63;Name=YP_006998341.1;Parent=gene65;Dbxref=Genbank:YP_006998341.1,GeneID:13986504;gbkey=CDS;product=DNA methylase;protein_id=YP_006998341.1;transl_table=11
+NC_019428.1	RefSeq	gene	55132	55404	.	-	.	ID=gene66;Name=ANA_P10067;Dbxref=GeneID:13986505;gbkey=Gene;locus_tag=ANA_P10067
+NC_019428.1	RefSeq	CDS	55132	55404	.	-	0	ID=cds64;Name=YP_006998342.1;Parent=gene66;Dbxref=Genbank:YP_006998342.1,GeneID:13986505;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998342.1;transl_table=11
+NC_019428.1	RefSeq	gene	55582	55938	.	+	.	ID=gene67;Name=ANA_P10068;Note=hypothetical protein%7Ewith internal stop codon;Dbxref=GeneID:13986506;gbkey=Gene;locus_tag=ANA_P10068;pseudo=true
+NC_019428.1	RefSeq	gene	55935	56276	.	+	.	ID=gene68;Name=ANA_P10069;Dbxref=GeneID:13986507;gbkey=Gene;locus_tag=ANA_P10069
+NC_019428.1	RefSeq	CDS	55935	56276	.	+	0	ID=cds65;Name=YP_006998343.1;Parent=gene68;Dbxref=Genbank:YP_006998343.1,GeneID:13986507;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998343.1;transl_table=11
+NC_019428.1	RefSeq	gene	56376	57080	.	-	.	ID=gene69;Name=ANA_P10070;Dbxref=GeneID:13986508;gbkey=Gene;locus_tag=ANA_P10070
+NC_019428.1	RefSeq	CDS	56376	57080	.	-	0	ID=cds66;Name=YP_006998344.1;Parent=gene69;Dbxref=Genbank:YP_006998344.1,GeneID:13986508;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998344.1;transl_table=11
+NC_019428.1	RefSeq	gene	57082	57207	.	+	.	ID=gene70;Name=ANA_P10071;Dbxref=GeneID:13986509;gbkey=Gene;locus_tag=ANA_P10071
+NC_019428.1	RefSeq	CDS	57082	57207	.	+	0	ID=cds67;Name=YP_006998345.1;Parent=gene70;Dbxref=Genbank:YP_006998345.1,GeneID:13986509;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998345.1;transl_table=11
+NC_019428.1	RefSeq	gene	57313	57534	.	+	.	ID=gene71;Name=ANA_P10072;Dbxref=GeneID:13986510;gbkey=Gene;locus_tag=ANA_P10072
+NC_019428.1	RefSeq	CDS	57313	57534	.	+	0	ID=cds68;Name=YP_006998346.1;Parent=gene71;Dbxref=Genbank:YP_006998346.1,GeneID:13986510;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998346.1;transl_table=11
+NC_019428.1	RefSeq	gene	57572	57892	.	+	.	ID=gene72;Name=ANA_P10073;Dbxref=GeneID:13986511;gbkey=Gene;locus_tag=ANA_P10073
+NC_019428.1	RefSeq	CDS	57572	57892	.	+	0	ID=cds69;Name=YP_006998347.1;Parent=gene72;Dbxref=Genbank:YP_006998347.1,GeneID:13986511;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998347.1;transl_table=11
+NC_019428.1	RefSeq	gene	57914	58312	.	+	.	ID=gene73;Name=ANA_P10074;Dbxref=GeneID:13986512;gbkey=Gene;locus_tag=ANA_P10074
+NC_019428.1	RefSeq	CDS	57914	58312	.	+	0	ID=cds70;Name=YP_006998348.1;Parent=gene73;Dbxref=Genbank:YP_006998348.1,GeneID:13986512;gbkey=CDS;product=phage integrase;protein_id=YP_006998348.1;transl_table=11
+NC_019428.1	RefSeq	gene	58321	58548	.	+	.	ID=gene74;Name=ANA_P10075;Dbxref=GeneID:13986513;gbkey=Gene;locus_tag=ANA_P10075
+NC_019428.1	RefSeq	CDS	58321	58548	.	+	0	ID=cds71;Name=YP_006998349.1;Parent=gene74;Dbxref=Genbank:YP_006998349.1,GeneID:13986513;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998349.1;transl_table=11
+NC_019428.1	RefSeq	gene	58590	59261	.	-	.	ID=gene75;Name=ANA_P10076;Dbxref=GeneID:13986514;gbkey=Gene;locus_tag=ANA_P10076
+NC_019428.1	RefSeq	CDS	58590	59261	.	-	0	ID=cds72;Name=YP_006998350.1;Parent=gene75;Dbxref=Genbank:YP_006998350.1,GeneID:13986514;gbkey=CDS;product=S-adenosyl-L-methionine dependent methyltransferase;protein_id=YP_006998350.1;transl_table=11
+NC_019428.1	RefSeq	gene	59410	59736	.	+	.	ID=gene76;Name=ANA_P10077;Dbxref=GeneID:13986515;gbkey=Gene;locus_tag=ANA_P10077
+NC_019428.1	RefSeq	CDS	59410	59736	.	+	0	ID=cds73;Name=YP_006998351.1;Parent=gene76;Dbxref=Genbank:YP_006998351.1,GeneID:13986515;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998351.1;transl_table=11
+NC_019428.1	RefSeq	gene	59815	60243	.	+	.	ID=gene77;Name=ANA_P10078;Note=hypothetical protein%7Ewith internal stop codon;Dbxref=GeneID:13986516;gbkey=Gene;locus_tag=ANA_P10078;pseudo=true
+NC_019428.1	RefSeq	gene	60328	60660	.	-	.	ID=gene78;Name=ANA_P10079;Dbxref=GeneID:13986517;gbkey=Gene;locus_tag=ANA_P10079
+NC_019428.1	RefSeq	CDS	60328	60660	.	-	0	ID=cds74;Name=YP_006998352.1;Parent=gene78;Dbxref=Genbank:YP_006998352.1,GeneID:13986517;gbkey=CDS;product=divalent cation tolerance protein;protein_id=YP_006998352.1;transl_table=11
+NC_019428.1	RefSeq	gene	60833	62407	.	-	.	ID=gene79;Name=ANA_P10080;Dbxref=GeneID:13986518;gbkey=Gene;locus_tag=ANA_P10080
+NC_019428.1	RefSeq	CDS	60833	62407	.	-	0	ID=cds75;Name=YP_006998353.1;Parent=gene79;Dbxref=Genbank:YP_006998353.1,GeneID:13986518;gbkey=CDS;product=HSR1-related GTP-binding protein;protein_id=YP_006998353.1;transl_table=11
+NC_019428.1	RefSeq	gene	62400	64376	.	-	.	ID=gene80;Name=ANA_P10081;Dbxref=GeneID:13986519;gbkey=Gene;locus_tag=ANA_P10081
+NC_019428.1	RefSeq	CDS	62400	64376	.	-	0	ID=cds76;Name=YP_006998354.1;Parent=gene80;Dbxref=Genbank:YP_006998354.1,GeneID:13986519;gbkey=CDS;product=dynamin family protein;protein_id=YP_006998354.1;transl_table=11
+NC_019428.1	RefSeq	gene	64561	65124	.	-	.	ID=gene81;Name=ANA_P10082;Dbxref=GeneID:13986520;gbkey=Gene;locus_tag=ANA_P10082
+NC_019428.1	RefSeq	CDS	64561	65124	.	-	0	ID=cds77;Name=YP_006998355.1;Parent=gene81;Dbxref=Genbank:YP_006998355.1,GeneID:13986520;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998355.1;transl_table=11
+NC_019428.1	RefSeq	gene	65193	66014	.	-	.	ID=gene82;Name=ANA_P10083;Dbxref=GeneID:13986521;gbkey=Gene;locus_tag=ANA_P10083
+NC_019428.1	RefSeq	CDS	65193	66014	.	-	0	ID=cds78;Name=YP_006998356.1;Parent=gene82;Dbxref=Genbank:YP_006998356.1,GeneID:13986521;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998356.1;transl_table=11
+NC_019428.1	RefSeq	gene	66099	67538	.	-	.	ID=gene83;Name=ANA_P10084;Dbxref=GeneID:13986522;gbkey=Gene;locus_tag=ANA_P10084
+NC_019428.1	RefSeq	CDS	66099	67538	.	-	0	ID=cds79;Name=YP_006998357.1;Parent=gene83;Dbxref=Genbank:YP_006998357.1,GeneID:13986522;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998357.1;transl_table=11
+NC_019428.1	RefSeq	gene	67531	68586	.	-	.	ID=gene84;Name=ANA_P10085;Dbxref=GeneID:13986523;gbkey=Gene;locus_tag=ANA_P10085
+NC_019428.1	RefSeq	CDS	67531	68586	.	-	0	ID=cds80;Name=YP_006998358.1;Parent=gene84;Dbxref=Genbank:YP_006998358.1,GeneID:13986523;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998358.1;transl_table=11
+NC_019428.1	RefSeq	gene	68638	69651	.	-	.	ID=gene85;Name=ANA_P10086;Dbxref=GeneID:13986524;gbkey=Gene;locus_tag=ANA_P10086
+NC_019428.1	RefSeq	CDS	68638	69651	.	-	0	ID=cds81;Name=YP_006998359.1;Parent=gene85;Dbxref=Genbank:YP_006998359.1,GeneID:13986524;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998359.1;transl_table=11
+NC_019428.1	RefSeq	gene	69674	70912	.	-	.	ID=gene86;Name=ANA_P10087;Dbxref=GeneID:13986525;gbkey=Gene;locus_tag=ANA_P10087
+NC_019428.1	RefSeq	CDS	69674	70912	.	-	0	ID=cds82;Name=YP_006998360.1;Parent=gene86;Dbxref=Genbank:YP_006998360.1,GeneID:13986525;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998360.1;transl_table=11
+NC_019428.1	RefSeq	gene	70954	72183	.	-	.	ID=gene87;Name=ANA_P10088;Dbxref=GeneID:13986526;gbkey=Gene;locus_tag=ANA_P10088
+NC_019428.1	RefSeq	CDS	70954	72183	.	-	0	ID=cds83;Name=YP_006998361.1;Parent=gene87;Dbxref=Genbank:YP_006998361.1,GeneID:13986526;gbkey=CDS;product=heat shock protein 70;protein_id=YP_006998361.1;transl_table=11
+NC_019428.1	RefSeq	gene	72249	72494	.	-	.	ID=gene88;Name=ANA_P10089;Dbxref=GeneID:13986527;gbkey=Gene;locus_tag=ANA_P10089
+NC_019428.1	RefSeq	CDS	72249	72494	.	-	0	ID=cds84;Name=YP_006998362.1;Parent=gene88;Dbxref=Genbank:YP_006998362.1,GeneID:13986527;gbkey=CDS;product=XRE family transcriptional regulator;protein_id=YP_006998362.1;transl_table=11
+NC_019428.1	RefSeq	gene	72772	73095	.	+	.	ID=gene89;Name=ANA_P10090;Note=hypothetical protein%7Epartial ORF%2C truncated;Dbxref=GeneID:13986528;gbkey=Gene;locus_tag=ANA_P10090;pseudo=true
+NC_019428.1	RefSeq	gene	73264	78933	.	-	.	ID=gene90;Name=ANA_P10091;Dbxref=GeneID:13986529;gbkey=Gene;locus_tag=ANA_P10091
+NC_019428.1	RefSeq	CDS	73264	78933	.	-	0	ID=cds85;Name=YP_006998363.1;Parent=gene90;Dbxref=Genbank:YP_006998363.1,GeneID:13986529;gbkey=CDS;product=two-component signal transduction system;protein_id=YP_006998363.1;transl_table=11
+NC_019428.1	RefSeq	gene	78962	79618	.	-	.	ID=gene91;Name=ANA_P10092;Dbxref=GeneID:13986530;gbkey=Gene;locus_tag=ANA_P10092
+NC_019428.1	RefSeq	CDS	78962	79618	.	-	0	ID=cds86;Name=YP_006998364.1;Parent=gene91;Dbxref=Genbank:YP_006998364.1,GeneID:13986530;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998364.1;transl_table=11
+NC_019428.1	RefSeq	gene	79669	80367	.	-	.	ID=gene92;Name=ANA_P10093;Dbxref=GeneID:13986531;gbkey=Gene;locus_tag=ANA_P10093
+NC_019428.1	RefSeq	CDS	79669	80367	.	-	0	ID=cds87;Name=YP_006998365.1;Parent=gene92;Dbxref=Genbank:YP_006998365.1,GeneID:13986531;gbkey=CDS;product=hypothetical protein;protein_id=YP_006998365.1;transl_table=11
+###

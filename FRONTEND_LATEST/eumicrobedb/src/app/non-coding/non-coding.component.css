@@ -1,0 +1,22 @@
+.bg-gray {
+    background-color: #C6CBD0;
+}
+.browser-details-container {
+    display: grid;
+    grid-template-columns: 182px 1fr;
+    grid-gap: 2em;
+}
+.nav-box {
+    top: var(--header);
+    bottom: 0;
+    overflow-y: auto;    
+    width: 182px;
+}
+.card-body p {
+    font-size: 1.3em;
+}
+pre.sequence{
+    font-size: 12px;
+    white-space: pre-wrap;
+    width: 721px;
+}

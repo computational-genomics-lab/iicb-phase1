@@ -1,0 +1,10 @@
+.top-strip {
+    border-top: 3px solid grey;
+}
+
+.bg-navbar {
+    background-color: #E2E6E9;
+    color: #243749;
+    font-weight: 700;
+    font-size: 12.6px;
+}

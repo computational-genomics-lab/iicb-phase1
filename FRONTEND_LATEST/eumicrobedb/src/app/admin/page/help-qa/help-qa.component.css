@@ -1,0 +1,25 @@
+.like-table-head {
+    display: grid;
+    grid-template-columns: 100px repeat(2,1fr);
+    gap: 1em;    
+}
+.like-table-head {
+    font-weight: 600;
+}
+.like-table-row {
+    display: grid;
+    grid-template-columns: 100px repeat(2,1fr);
+    gap: 1em;    
+    grid-auto-rows: 1fr;
+}
+.like-table-heading {
+    margin-bottom: 1em;
+}
+.like-table-col-group, .like-table-heading-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+.like-table-col, .like-table-col-group {
+    margin-bottom: 0.5em;
+}

@@ -1,0 +1,42 @@
+header {
+    height: 134px;
+}
+
+.topbar-dark {
+    background-color: #000000;
+}
+
+.nav-topbar {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-item.active a {
+    text-decoration: underline;
+}
+
+.logo-box {
+    background-image: url(../../assets/images/new2.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.logo {
+    height: 78px;
+}
+
+.logout-link:hover {
+    cursor: pointer;
+}
+
+.genome-infobox {
+    background-color: aliceblue;
+    font-size: 1em;
+    color: #000;
+}
+.genome-action-btn {
+    border: 1px solid #999;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 26px;
+}

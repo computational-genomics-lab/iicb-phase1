@@ -1,0 +1,58 @@
+{
+    "baseUrl"  : "http://localhost:8000",
+    "treeUrl"  : "api/gettreedata/",
+    "listUrl"  : "api/getlistdata/",
+    "genomeUrl": "api/chromosomePageUI/",
+    "browserDetailUrl": "api/sequenceDetailUI/",
+    "scaffoldDetailsUrl": "api/scaffoldPosLinkUI/",
+    "browserTabDetailsUrl": "api/sciTabUI/",
+    "nonCodingUrl": "api/sequenceDetailUI/",
+    "processQueriesUrl": "api/ProcessQueries/",
+    "gffUpload": "api/UploadFile/",
+    "tabs": [
+        "api/QueryByGeneName/",
+        "api/QueryByPrimaryAnnotation/",
+        "api/QueryByGenomeLocation/",
+        "api/QueryByConservedRegions/",
+        "api/QueryByKEGGorthologyid/",
+        "api/QueryByclusterid/",
+        "api/QueryByclusterdescription/",
+        "api/QueryByProteinDomainmotiffunction/",
+        "api/QueryBySecretomeTMHMM/"
+    ],
+    "block": {
+        "get": {
+            "dataUsagePolicyUrl": "api/GetData_Usage_Policy/",
+            "newsUrl"           : "api/GetData_News/",
+            "aboutUrl"          : "api/GetDataAbout/",
+            "videoTutorialsUrl" : "api/GetVideos/"
+        },
+        "post": {
+            "dataUsagePolicyUrl": "api/SetData_Usage_Policy/",
+            "newsUrl"           : "api/SetData_News/",
+            "aboutUrl"          : "api/SetDataAbout/",
+            "videoTutorialsUrl" : "api/SetVideos/"
+        }
+    },
+    "page": {
+        "get": {
+            "aboutUrl"  : "api/GetAboutUs/",
+            "helpUrl"   : "api/GetHelp/",
+            "helpQAUrl" : "api/GetHelpQuesAns/",
+            "archiveUrl": "api/GetArchivePage/",
+            "contactUsUrl": "api/GetContactUs/"
+        },
+        "post": {
+            "aboutUrl"  : "api/SetAboutUs/",
+            "helpUrl"   : "api/SetHelpPage/",
+            "helpQAUrl" : "api/SetHelpQuesAns/",
+            "archiveUrl": "api/SetArchivePage/",
+            "contactUsUrl": "api/SetContactUs/"
+        }
+    },
+    "media": {
+        "aboutUs": "http://192.168.0.11:80/media/ABOUT_US/",
+        "browserDetailsMediaUrl": "http://192.168.0.11:80/media/SCI_OUT/",
+        "dndMediaUrl": "http://192.168.0.11:80/media/dnd/"
+    }
+}

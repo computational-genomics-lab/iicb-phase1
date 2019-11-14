@@ -1,0 +1,244 @@
+##gff-version 3
+#!gff-spec-version 1.20
+#!processor NCBI annotwriter
+##sequence-region NC_009933.1 1 120693
+##species http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=329726
+NC_009933.1	RefSeq	region	1	120693	.	+	.	ID=id0;Dbxref=taxon:329726;Is_circular=true;gbkey=Src;genome=plasmid;mol_type=genomic DNA;note=type strain of Acaryochloris marina;old-name=Acaryochloris marina;plasmid-name=pREB8;strain=MBIC11017
+NC_009933.1	RefSeq	gene	28	1722	.	+	.	ID=gene0;Name=AM1_H0001;Dbxref=GeneID:5687287;gbkey=Gene;locus_tag=AM1_H0001
+NC_009933.1	RefSeq	CDS	28	1722	.	+	0	ID=cds0;Name=YP_001522668.1;Parent=gene0;Note=Downstream region overlaps with a putative transposase-associated ATP-binding protein.;Dbxref=Genbank:YP_001522668.1,GeneID:5687287;gbkey=CDS;product=transposase%2C putative;protein_id=YP_001522668.1;transl_table=11
+NC_009933.1	RefSeq	gene	1550	2281	.	+	.	ID=gene1;Name=AM1_H0002;Dbxref=GeneID:5687288;gbkey=Gene;locus_tag=AM1_H0002
+NC_009933.1	RefSeq	CDS	1550	2281	.	+	0	ID=cds1;Name=YP_001522669.1;Parent=gene1;Note=Upstream region overlaps with a putative transposase.;Dbxref=Genbank:YP_001522669.1,GeneID:5687288;gbkey=CDS;product=transposase-associated ATP-binding protein%2C putative;protein_id=YP_001522669.1;transl_table=11
+NC_009933.1	RefSeq	gene	2439	3584	.	-	.	ID=gene2;Name=AM1_H0003;Dbxref=GeneID:5687289;gbkey=Gene;locus_tag=AM1_H0003
+NC_009933.1	RefSeq	CDS	2439	3584	.	-	0	ID=cds2;Name=YP_001522670.1;Parent=gene2;Dbxref=Genbank:YP_001522670.1,GeneID:5687289;gbkey=CDS;product=transposase;protein_id=YP_001522670.1;transl_table=11
+NC_009933.1	RefSeq	gene	4247	8176	.	-	.	ID=gene3;Name=AM1_H0004;Dbxref=GeneID:5687290;gbkey=Gene;locus_tag=AM1_H0004
+NC_009933.1	RefSeq	CDS	4247	8176	.	-	0	ID=cds3;Name=YP_001522671.1;Parent=gene3;Note=Shows homology to DNA helicase but no HMM support;Dbxref=Genbank:YP_001522671.1,GeneID:5687290;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522671.1;transl_table=11
+NC_009933.1	RefSeq	gene	8325	9566	.	+	.	ID=gene4;Name=AM1_H0005;Dbxref=GeneID:5687291;gbkey=Gene;locus_tag=AM1_H0005
+NC_009933.1	RefSeq	CDS	8325	9566	.	+	0	ID=cds4;Name=YP_001522672.1;Parent=gene4;Dbxref=Genbank:YP_001522672.1,GeneID:5687291;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522672.1;transl_table=11
+NC_009933.1	RefSeq	gene	9986	11011	.	+	.	ID=gene5;Name=AM1_H0006;Dbxref=GeneID:5687292;gbkey=Gene;locus_tag=AM1_H0006
+NC_009933.1	RefSeq	CDS	9986	11011	.	+	0	ID=cds5;Name=YP_001522673.1;Parent=gene5;Dbxref=Genbank:YP_001522673.1,GeneID:5687292;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522673.1;transl_table=11
+NC_009933.1	RefSeq	gene	11008	11415	.	+	.	ID=gene6;Name=AM1_H0007;Dbxref=GeneID:5687293;gbkey=Gene;locus_tag=AM1_H0007
+NC_009933.1	RefSeq	CDS	11008	11415	.	+	0	ID=cds6;Name=YP_001522674.1;Parent=gene6;Dbxref=Genbank:YP_001522674.1,GeneID:5687293;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522674.1;transl_table=11
+NC_009933.1	RefSeq	gene	11405	12091	.	+	.	ID=gene7;Name=AM1_H0008;Dbxref=GeneID:5687294;gbkey=Gene;locus_tag=AM1_H0008
+NC_009933.1	RefSeq	CDS	11405	12091	.	+	0	ID=cds7;Name=YP_001522675.1;Parent=gene7;Dbxref=Genbank:YP_001522675.1,GeneID:5687294;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522675.1;transl_table=11
+NC_009933.1	RefSeq	gene	12100	12366	.	+	.	ID=gene8;Name=AM1_H0009;Dbxref=GeneID:5687295;gbkey=Gene;locus_tag=AM1_H0009
+NC_009933.1	RefSeq	CDS	12100	12366	.	+	0	ID=cds8;Name=YP_001522676.1;Parent=gene8;Dbxref=Genbank:YP_001522676.1,GeneID:5687295;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522676.1;transl_table=11
+NC_009933.1	RefSeq	gene	12363	12488	.	+	.	ID=gene9;Name=AM1_H0010;Dbxref=GeneID:5687296;gbkey=Gene;locus_tag=AM1_H0010
+NC_009933.1	RefSeq	CDS	12363	12488	.	+	0	ID=cds9;Name=YP_001522677.1;Parent=gene9;Dbxref=Genbank:YP_001522677.1,GeneID:5687296;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522677.1;transl_table=11
+NC_009933.1	RefSeq	gene	12505	13056	.	+	.	ID=gene10;Name=AM1_H0011;Dbxref=GeneID:5687297;gbkey=Gene;locus_tag=AM1_H0011
+NC_009933.1	RefSeq	CDS	12505	13056	.	+	0	ID=cds10;Name=YP_001522678.1;Parent=gene10;Dbxref=Genbank:YP_001522678.1,GeneID:5687297;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522678.1;transl_table=11
+NC_009933.1	RefSeq	gene	13221	13697	.	+	.	ID=gene11;Name=AM1_H0012;Dbxref=GeneID:5687298;gbkey=Gene;locus_tag=AM1_H0012
+NC_009933.1	RefSeq	CDS	13221	13697	.	+	0	ID=cds11;Name=YP_001522679.1;Parent=gene11;Dbxref=Genbank:YP_001522679.1,GeneID:5687298;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522679.1;transl_table=11
+NC_009933.1	RefSeq	gene	13712	13828	.	+	.	ID=gene12;Name=AM1_H0013;Dbxref=GeneID:5687299;gbkey=Gene;locus_tag=AM1_H0013
+NC_009933.1	RefSeq	CDS	13712	13828	.	+	0	ID=cds12;Name=YP_001522680.1;Parent=gene12;Dbxref=Genbank:YP_001522680.1,GeneID:5687299;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522680.1;transl_table=11
+NC_009933.1	RefSeq	gene	13922	14146	.	+	.	ID=gene13;Name=AM1_H0014;Dbxref=GeneID:5687300;gbkey=Gene;locus_tag=AM1_H0014
+NC_009933.1	RefSeq	CDS	13922	14146	.	+	0	ID=cds13;Name=YP_001522681.1;Parent=gene13;Dbxref=Genbank:YP_001522681.1,GeneID:5687300;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522681.1;transl_table=11
+NC_009933.1	RefSeq	gene	14447	14653	.	+	.	ID=gene14;Name=AM1_H0015;Dbxref=GeneID:5687301;gbkey=Gene;locus_tag=AM1_H0015
+NC_009933.1	RefSeq	CDS	14447	14653	.	+	0	ID=cds14;Name=YP_001522682.1;Parent=gene14;Dbxref=Genbank:YP_001522682.1,GeneID:5687301;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522682.1;transl_table=11
+NC_009933.1	RefSeq	gene	14818	14958	.	+	.	ID=gene15;Name=AM1_H0016;Dbxref=GeneID:5687302;gbkey=Gene;locus_tag=AM1_H0016
+NC_009933.1	RefSeq	CDS	14818	14958	.	+	0	ID=cds15;Name=YP_001522683.1;Parent=gene15;Dbxref=Genbank:YP_001522683.1,GeneID:5687302;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522683.1;transl_table=11
+NC_009933.1	RefSeq	gene	15134	15628	.	-	.	ID=gene16;Name=AM1_H0017;Dbxref=GeneID:5687303;gbkey=Gene;locus_tag=AM1_H0017
+NC_009933.1	RefSeq	CDS	15134	15628	.	-	0	ID=cds16;Name=YP_001522684.1;Parent=gene16;Dbxref=Genbank:YP_001522684.1,GeneID:5687303;gbkey=CDS;product=acetyltransferase;protein_id=YP_001522684.1;transl_table=11
+NC_009933.1	RefSeq	gene	15901	16482	.	+	.	ID=gene17;Name=AM1_H0018;Dbxref=GeneID:5687304;gbkey=Gene;locus_tag=AM1_H0018
+NC_009933.1	RefSeq	CDS	15901	16482	.	+	0	ID=cds17;Name=YP_001522685.1;Parent=gene17;Dbxref=Genbank:YP_001522685.1,GeneID:5687304;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522685.1;transl_table=11
+NC_009933.1	RefSeq	gene	16714	17382	.	+	.	ID=gene18;Name=AM1_H0019;Dbxref=GeneID:5687305;gbkey=Gene;locus_tag=AM1_H0019
+NC_009933.1	RefSeq	CDS	16714	17382	.	+	0	ID=cds18;Name=YP_001522686.1;Parent=gene18;Dbxref=Genbank:YP_001522686.1,GeneID:5687305;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522686.1;transl_table=11
+NC_009933.1	RefSeq	gene	17684	17812	.	-	.	ID=gene19;Name=AM1_H0020;Dbxref=GeneID:5687306;gbkey=Gene;locus_tag=AM1_H0020
+NC_009933.1	RefSeq	CDS	17684	17812	.	-	0	ID=cds19;Name=YP_001522687.1;Parent=gene19;Dbxref=Genbank:YP_001522687.1,GeneID:5687306;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522687.1;transl_table=11
+NC_009933.1	RefSeq	gene	18127	21120	.	-	.	ID=gene20;Name=AM1_H0021;Dbxref=GeneID:5687307;gbkey=Gene;locus_tag=AM1_H0021
+NC_009933.1	RefSeq	CDS	18127	21120	.	-	0	ID=cds20;Name=YP_001522688.1;Parent=gene20;Dbxref=Genbank:YP_001522688.1,GeneID:5687307;gbkey=CDS;product=TPR repeat-containing protein;protein_id=YP_001522688.1;transl_table=11
+NC_009933.1	RefSeq	gene	21289	21780	.	-	.	ID=gene21;Name=AM1_H0022;Dbxref=GeneID:5687308;gbkey=Gene;locus_tag=AM1_H0022
+NC_009933.1	RefSeq	CDS	21289	21780	.	-	0	ID=cds21;Name=YP_001522689.1;Parent=gene21;Dbxref=Genbank:YP_001522689.1,GeneID:5687308;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522689.1;transl_table=11
+NC_009933.1	RefSeq	gene	22280	22459	.	-	.	ID=gene22;Name=AM1_H0023;Dbxref=GeneID:5687309;gbkey=Gene;locus_tag=AM1_H0023
+NC_009933.1	RefSeq	CDS	22280	22459	.	-	0	ID=cds22;Name=YP_001522690.1;Parent=gene22;Dbxref=Genbank:YP_001522690.1,GeneID:5687309;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522690.1;transl_table=11
+NC_009933.1	RefSeq	gene	22482	22595	.	-	.	ID=gene23;Name=AM1_H0024;Dbxref=GeneID:5687310;gbkey=Gene;locus_tag=AM1_H0024
+NC_009933.1	RefSeq	CDS	22482	22595	.	-	0	ID=cds23;Name=YP_001522691.1;Parent=gene23;Dbxref=Genbank:YP_001522691.1,GeneID:5687310;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522691.1;transl_table=11
+NC_009933.1	RefSeq	gene	22733	23230	.	+	.	ID=gene24;Name=AM1_H0025;Note=fragment%3B similar to N-terminus of transposase;Dbxref=GeneID:5687311;gbkey=Gene;locus_tag=AM1_H0025
+NC_009933.1	RefSeq	gene	23301	23981	.	+	.	ID=gene25;Name=AM1_H0027;Note=fragment%3B similar to C-terminus of transposase;Dbxref=GeneID:5687312;gbkey=Gene;locus_tag=AM1_H0027
+NC_009933.1	RefSeq	gene	23965	24462	.	-	.	ID=gene26;Name=AM1_H0026;Note=fragment%3B similar to N-terminus of transposase;Dbxref=GeneID:5687314;gbkey=Gene;locus_tag=AM1_H0026
+NC_009933.1	RefSeq	gene	24670	25296	.	+	.	ID=gene27;Name=AM1_H0028;Dbxref=GeneID:5687313;gbkey=Gene;locus_tag=AM1_H0028
+NC_009933.1	RefSeq	CDS	24670	25296	.	+	0	ID=cds24;Name=YP_001522692.1;Parent=gene27;Dbxref=Genbank:YP_001522692.1,GeneID:5687313;gbkey=CDS;product=resolvase domain-containing protein;protein_id=YP_001522692.1;transl_table=11
+NC_009933.1	RefSeq	gene	25349	26209	.	+	.	ID=gene28;Name=AM1_H0030;Dbxref=GeneID:5687315;gbkey=Gene;locus_tag=AM1_H0030
+NC_009933.1	RefSeq	CDS	25349	26209	.	+	0	ID=cds25;Name=YP_001522693.1;Parent=gene28;Dbxref=Genbank:YP_001522693.1,GeneID:5687315;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522693.1;transl_table=11
+NC_009933.1	RefSeq	gene	26163	27218	.	-	.	ID=gene29;Name=AM1_H0029;Dbxref=GeneID:5687317;gbkey=Gene;locus_tag=AM1_H0029
+NC_009933.1	RefSeq	CDS	26163	27218	.	-	0	ID=cds26;Name=YP_001522694.1;Parent=gene29;Dbxref=Genbank:YP_001522694.1,GeneID:5687317;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522694.1;transl_table=11
+NC_009933.1	RefSeq	gene	27328	27750	.	+	.	ID=gene30;Name=AM1_H0031;Dbxref=GeneID:5687316;gbkey=Gene;locus_tag=AM1_H0031
+NC_009933.1	RefSeq	CDS	27328	27750	.	+	0	ID=cds27;Name=YP_001522695.1;Parent=gene30;Dbxref=Genbank:YP_001522695.1,GeneID:5687316;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522695.1;transl_table=11
+NC_009933.1	RefSeq	gene	27808	28221	.	-	.	ID=gene31;Name=AM1_H0032;Dbxref=GeneID:5687318;gbkey=Gene;locus_tag=AM1_H0032
+NC_009933.1	RefSeq	CDS	27808	28221	.	-	0	ID=cds28;Name=YP_001522696.1;Parent=gene31;Dbxref=Genbank:YP_001522696.1,GeneID:5687318;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522696.1;transl_table=11
+NC_009933.1	RefSeq	gene	28290	28403	.	-	.	ID=gene32;Name=AM1_H0033;Dbxref=GeneID:5687319;gbkey=Gene;locus_tag=AM1_H0033
+NC_009933.1	RefSeq	CDS	28290	28403	.	-	0	ID=cds29;Name=YP_001522697.1;Parent=gene32;Dbxref=Genbank:YP_001522697.1,GeneID:5687319;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522697.1;transl_table=11
+NC_009933.1	RefSeq	gene	28404	28580	.	+	.	ID=gene33;Name=AM1_H0034;Dbxref=GeneID:5687320;gbkey=Gene;locus_tag=AM1_H0034
+NC_009933.1	RefSeq	CDS	28404	28580	.	+	0	ID=cds30;Name=YP_001522698.1;Parent=gene33;Dbxref=Genbank:YP_001522698.1,GeneID:5687320;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522698.1;transl_table=11
+NC_009933.1	RefSeq	gene	28728	28919	.	-	.	ID=gene34;Name=AM1_H0035;Dbxref=GeneID:5687321;gbkey=Gene;locus_tag=AM1_H0035
+NC_009933.1	RefSeq	CDS	28728	28919	.	-	0	ID=cds31;Name=YP_001522699.1;Parent=gene34;Dbxref=Genbank:YP_001522699.1,GeneID:5687321;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522699.1;transl_table=11
+NC_009933.1	RefSeq	gene	28927	29190	.	-	.	ID=gene35;Name=AM1_H0036;Dbxref=GeneID:5687322;gbkey=Gene;locus_tag=AM1_H0036
+NC_009933.1	RefSeq	CDS	28927	29190	.	-	0	ID=cds32;Name=YP_001522700.1;Parent=gene35;Dbxref=Genbank:YP_001522700.1,GeneID:5687322;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522700.1;transl_table=11
+NC_009933.1	RefSeq	gene	29229	29474	.	-	.	ID=gene36;Name=AM1_H0037;Dbxref=GeneID:5687323;gbkey=Gene;locus_tag=AM1_H0037
+NC_009933.1	RefSeq	CDS	29229	29474	.	-	0	ID=cds33;Name=YP_001522701.1;Parent=gene36;Dbxref=Genbank:YP_001522701.1,GeneID:5687323;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522701.1;transl_table=11
+NC_009933.1	RefSeq	gene	29673	29975	.	+	.	ID=gene37;Name=AM1_H0038;Dbxref=GeneID:5687324;gbkey=Gene;locus_tag=AM1_H0038
+NC_009933.1	RefSeq	CDS	29673	29975	.	+	0	ID=cds34;Name=YP_001522702.1;Parent=gene37;Dbxref=Genbank:YP_001522702.1,GeneID:5687324;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522702.1;transl_table=11
+NC_009933.1	RefSeq	gene	30045	30422	.	+	.	ID=gene38;Name=AM1_H0039;Dbxref=GeneID:5687325;gbkey=Gene;locus_tag=AM1_H0039
+NC_009933.1	RefSeq	CDS	30045	30422	.	+	0	ID=cds35;Name=YP_001522703.1;Parent=gene38;Dbxref=Genbank:YP_001522703.1,GeneID:5687325;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522703.1;transl_table=11
+NC_009933.1	RefSeq	gene	30488	31471	.	+	.	ID=gene39;Name=AM1_H0040;Dbxref=GeneID:5687326;gbkey=Gene;locus_tag=AM1_H0040
+NC_009933.1	RefSeq	CDS	30488	31471	.	+	0	ID=cds36;Name=YP_001522704.1;Parent=gene39;Dbxref=Genbank:YP_001522704.1,GeneID:5687326;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522704.1;transl_table=11
+NC_009933.1	RefSeq	gene	31579	31908	.	+	.	ID=gene40;Name=AM1_H0041;Dbxref=GeneID:5687327;gbkey=Gene;locus_tag=AM1_H0041
+NC_009933.1	RefSeq	CDS	31579	31908	.	+	0	ID=cds37;Name=YP_001522705.1;Parent=gene40;Dbxref=Genbank:YP_001522705.1,GeneID:5687327;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522705.1;transl_table=11
+NC_009933.1	RefSeq	gene	32006	32152	.	-	.	ID=gene41;Name=AM1_H0042;Dbxref=GeneID:5687328;gbkey=Gene;locus_tag=AM1_H0042
+NC_009933.1	RefSeq	CDS	32006	32152	.	-	0	ID=cds38;Name=YP_001522706.1;Parent=gene41;Dbxref=Genbank:YP_001522706.1,GeneID:5687328;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522706.1;transl_table=11
+NC_009933.1	RefSeq	gene	32266	32904	.	+	.	ID=gene42;Name=AM1_H0043;Dbxref=GeneID:5687329;gbkey=Gene;locus_tag=AM1_H0043
+NC_009933.1	RefSeq	CDS	32266	32904	.	+	0	ID=cds39;Name=YP_001522707.1;Parent=gene42;Dbxref=Genbank:YP_001522707.1,GeneID:5687329;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522707.1;transl_table=11
+NC_009933.1	RefSeq	gene	33003	33383	.	+	.	ID=gene43;Name=AM1_H0044;Dbxref=GeneID:5687330;gbkey=Gene;locus_tag=AM1_H0044
+NC_009933.1	RefSeq	CDS	33003	33383	.	+	0	ID=cds40;Name=YP_001522708.1;Parent=gene43;Dbxref=Genbank:YP_001522708.1,GeneID:5687330;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522708.1;transl_table=11
+NC_009933.1	RefSeq	gene	33457	33789	.	+	.	ID=gene44;Name=AM1_H0045;Dbxref=GeneID:5687331;gbkey=Gene;locus_tag=AM1_H0045
+NC_009933.1	RefSeq	CDS	33457	33789	.	+	0	ID=cds41;Name=YP_001522709.1;Parent=gene44;Dbxref=Genbank:YP_001522709.1,GeneID:5687331;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522709.1;transl_table=11
+NC_009933.1	RefSeq	gene	33822	34232	.	+	.	ID=gene45;Name=AM1_H0046;Dbxref=GeneID:5687332;gbkey=Gene;locus_tag=AM1_H0046
+NC_009933.1	RefSeq	CDS	33822	34232	.	+	0	ID=cds42;Name=YP_001522710.1;Parent=gene45;Dbxref=Genbank:YP_001522710.1,GeneID:5687332;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522710.1;transl_table=11
+NC_009933.1	RefSeq	gene	34376	34618	.	+	.	ID=gene46;Name=AM1_H0047;Dbxref=GeneID:5687333;gbkey=Gene;locus_tag=AM1_H0047
+NC_009933.1	RefSeq	CDS	34376	34618	.	+	0	ID=cds43;Name=YP_001522711.1;Parent=gene46;Dbxref=Genbank:YP_001522711.1,GeneID:5687333;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522711.1;transl_table=11
+NC_009933.1	RefSeq	gene	34651	34875	.	-	.	ID=gene47;Name=AM1_H0048;Dbxref=GeneID:5687334;gbkey=Gene;locus_tag=AM1_H0048
+NC_009933.1	RefSeq	CDS	34651	34875	.	-	0	ID=cds44;Name=YP_001522712.1;Parent=gene47;Dbxref=Genbank:YP_001522712.1,GeneID:5687334;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522712.1;transl_table=11
+NC_009933.1	RefSeq	gene	34995	35141	.	-	.	ID=gene48;Name=AM1_H0049;Dbxref=GeneID:5687335;gbkey=Gene;locus_tag=AM1_H0049
+NC_009933.1	RefSeq	CDS	34995	35141	.	-	0	ID=cds45;Name=YP_001522713.1;Parent=gene48;Dbxref=Genbank:YP_001522713.1,GeneID:5687335;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522713.1;transl_table=11
+NC_009933.1	RefSeq	gene	35437	35550	.	-	.	ID=gene49;Name=AM1_H0050;Dbxref=GeneID:5687336;gbkey=Gene;locus_tag=AM1_H0050
+NC_009933.1	RefSeq	CDS	35437	35550	.	-	0	ID=cds46;Name=YP_001522714.1;Parent=gene49;Dbxref=Genbank:YP_001522714.1,GeneID:5687336;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522714.1;transl_table=11
+NC_009933.1	RefSeq	gene	36145	36282	.	+	.	ID=gene50;Name=AM1_H0051;Dbxref=GeneID:5687337;gbkey=Gene;locus_tag=AM1_H0051
+NC_009933.1	RefSeq	CDS	36145	36282	.	+	0	ID=cds47;Name=YP_001522715.1;Parent=gene50;Dbxref=Genbank:YP_001522715.1,GeneID:5687337;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522715.1;transl_table=11
+NC_009933.1	RefSeq	gene	36779	37366	.	+	.	ID=gene51;Name=AM1_H0052;Dbxref=GeneID:5687338;gbkey=Gene;locus_tag=AM1_H0052
+NC_009933.1	RefSeq	CDS	36779	37366	.	+	0	ID=cds48;Name=YP_001522716.1;Parent=gene51;Dbxref=Genbank:YP_001522716.1,GeneID:5687338;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522716.1;transl_table=11
+NC_009933.1	RefSeq	gene	37645	38589	.	+	.	ID=gene52;Name=AM1_H0053;Dbxref=GeneID:5687339;gbkey=Gene;locus_tag=AM1_H0053
+NC_009933.1	RefSeq	CDS	37645	38589	.	+	0	ID=cds49;Name=YP_001522717.1;Parent=gene52;Dbxref=Genbank:YP_001522717.1,GeneID:5687339;gbkey=CDS;product=cation diffusion facilitator family transporter;protein_id=YP_001522717.1;transl_table=11
+NC_009933.1	RefSeq	gene	38780	39568	.	-	.	ID=gene53;Name=AM1_H0054;Dbxref=GeneID:5687340;gbkey=Gene;locus_tag=AM1_H0054
+NC_009933.1	RefSeq	CDS	38780	39568	.	-	0	ID=cds50;Name=YP_001522718.1;Parent=gene53;Dbxref=Genbank:YP_001522718.1,GeneID:5687340;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522718.1;transl_table=11
+NC_009933.1	RefSeq	gene	39806	40015	.	+	.	ID=gene54;Name=AM1_H0055;Dbxref=GeneID:5687341;gbkey=Gene;locus_tag=AM1_H0055
+NC_009933.1	RefSeq	CDS	39806	40015	.	+	0	ID=cds51;Name=YP_001522719.1;Parent=gene54;Dbxref=Genbank:YP_001522719.1,GeneID:5687341;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522719.1;transl_table=11
+NC_009933.1	RefSeq	gene	40093	40239	.	-	.	ID=gene55;Name=AM1_H0056;Dbxref=GeneID:5687342;gbkey=Gene;locus_tag=AM1_H0056
+NC_009933.1	RefSeq	CDS	40093	40239	.	-	0	ID=cds52;Name=YP_001522720.1;Parent=gene55;Dbxref=Genbank:YP_001522720.1,GeneID:5687342;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522720.1;transl_table=11
+NC_009933.1	RefSeq	gene	40510	41628	.	-	.	ID=gene56;Name=AM1_H0057;Dbxref=GeneID:5687343;gbkey=Gene;locus_tag=AM1_H0057
+NC_009933.1	RefSeq	CDS	40510	41628	.	-	0	ID=cds53;Name=YP_001522721.1;Parent=gene56;Dbxref=Genbank:YP_001522721.1,GeneID:5687343;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522721.1;transl_table=11
+NC_009933.1	RefSeq	gene	42568	43752	.	+	.	ID=gene57;Name=AM1_H0058;Dbxref=GeneID:5687344;gbkey=Gene;locus_tag=AM1_H0058
+NC_009933.1	RefSeq	CDS	42568	43752	.	+	0	ID=cds54;Name=YP_001522722.1;Parent=gene57;Dbxref=Genbank:YP_001522722.1,GeneID:5687344;gbkey=CDS;product=diguanylate cyclase;protein_id=YP_001522722.1;transl_table=11
+NC_009933.1	RefSeq	gene	43904	44917	.	-	.	ID=gene58;Name=AM1_H0059;Dbxref=GeneID:5687345;gbkey=Gene;locus_tag=AM1_H0059
+NC_009933.1	RefSeq	CDS	43904	44917	.	-	0	ID=cds55;Name=YP_001522723.1;Parent=gene58;Dbxref=Genbank:YP_001522723.1,GeneID:5687345;gbkey=CDS;product=phage integrase;protein_id=YP_001522723.1;transl_table=11
+NC_009933.1	RefSeq	gene	45208	46248	.	-	.	ID=gene59;Name=AM1_H0060;Dbxref=GeneID:5687346;gbkey=Gene;locus_tag=AM1_H0060
+NC_009933.1	RefSeq	CDS	45208	46248	.	-	0	ID=cds56;Name=YP_001522724.1;Parent=gene59;Dbxref=Genbank:YP_001522724.1,GeneID:5687346;gbkey=CDS;product=WD repeat-containing protein;protein_id=YP_001522724.1;transl_table=11
+NC_009933.1	RefSeq	gene	46310	46879	.	-	.	ID=gene60;Name=AM1_H0061;Dbxref=GeneID:5687347;gbkey=Gene;locus_tag=AM1_H0061
+NC_009933.1	RefSeq	CDS	46310	46879	.	-	0	ID=cds57;Name=YP_001522725.1;Parent=gene60;Dbxref=Genbank:YP_001522725.1,GeneID:5687347;gbkey=CDS;product=ferric reductase like transmembrane component family protein;protein_id=YP_001522725.1;transl_table=11
+NC_009933.1	RefSeq	gene	47573	49282	.	+	.	ID=gene61;Name=AM1_H0062;Dbxref=GeneID:5687348;gbkey=Gene;locus_tag=AM1_H0062
+NC_009933.1	RefSeq	CDS	47573	49282	.	+	0	ID=cds58;Name=YP_001522726.1;Parent=gene61;Dbxref=Genbank:YP_001522726.1,GeneID:5687348;gbkey=CDS;product=PAP2 superfamily domain-containing protein;protein_id=YP_001522726.1;transl_table=11
+NC_009933.1	RefSeq	gene	49532	51493	.	-	.	ID=gene62;Name=AM1_H0063;Dbxref=GeneID:5687349;gbkey=Gene;locus_tag=AM1_H0063
+NC_009933.1	RefSeq	CDS	49532	51493	.	-	0	ID=cds59;Name=YP_001522727.1;Parent=gene62;Dbxref=Genbank:YP_001522727.1,GeneID:5687349;gbkey=CDS;product=TPR repeat-containing protein;protein_id=YP_001522727.1;transl_table=11
+NC_009933.1	RefSeq	gene	51697	52794	.	-	.	ID=gene63;Name=AM1_H0064;Dbxref=GeneID:5687350;gbkey=Gene;locus_tag=AM1_H0064
+NC_009933.1	RefSeq	CDS	51697	52794	.	-	0	ID=cds60;Name=YP_001522728.1;Parent=gene63;Dbxref=Genbank:YP_001522728.1,GeneID:5687350;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522728.1;transl_table=11
+NC_009933.1	RefSeq	gene	52929	56810	.	-	.	ID=gene64;Name=AM1_H0065;Dbxref=GeneID:5687351;gbkey=Gene;locus_tag=AM1_H0065
+NC_009933.1	RefSeq	CDS	52929	56810	.	-	0	ID=cds61;Name=YP_001522729.1;Parent=gene64;Dbxref=Genbank:YP_001522729.1,GeneID:5687351;gbkey=CDS;product=WD-containing repeat protein;protein_id=YP_001522729.1;transl_table=11
+NC_009933.1	RefSeq	gene	57125	57652	.	+	.	ID=gene65;Name=AM1_H0066;Dbxref=GeneID:5687352;gbkey=Gene;locus_tag=AM1_H0066
+NC_009933.1	RefSeq	CDS	57125	57652	.	+	0	ID=cds62;Name=YP_001522730.1;Parent=gene65;Dbxref=Genbank:YP_001522730.1,GeneID:5687352;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522730.1;transl_table=11
+NC_009933.1	RefSeq	gene	57636	58280	.	+	.	ID=gene66;Name=AM1_H0067;Dbxref=GeneID:5687353;gbkey=Gene;locus_tag=AM1_H0067
+NC_009933.1	RefSeq	CDS	57636	58280	.	+	0	ID=cds63;Name=YP_001522731.1;Parent=gene66;Dbxref=Genbank:YP_001522731.1,GeneID:5687353;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522731.1;transl_table=11
+NC_009933.1	RefSeq	gene	58350	61373	.	-	.	ID=gene67;Name=AM1_H0068;Dbxref=GeneID:5687354;gbkey=Gene;locus_tag=AM1_H0068
+NC_009933.1	RefSeq	CDS	58350	61373	.	-	0	ID=cds64;Name=YP_001522732.1;Parent=gene67;Dbxref=Genbank:YP_001522732.1,GeneID:5687354;gbkey=CDS;product=dead%2Fdeah box helicase domain-containing protein;protein_id=YP_001522732.1;transl_table=11
+NC_009933.1	RefSeq	gene	61805	62212	.	-	.	ID=gene68;Name=AM1_H0069;Dbxref=GeneID:5687355;gbkey=Gene;locus_tag=AM1_H0069
+NC_009933.1	RefSeq	CDS	61805	62212	.	-	0	ID=cds65;Name=YP_001522733.1;Parent=gene68;Dbxref=Genbank:YP_001522733.1,GeneID:5687355;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522733.1;transl_table=11
+NC_009933.1	RefSeq	gene	62212	62847	.	-	.	ID=gene69;Name=AM1_H0070;Dbxref=GeneID:5687356;gbkey=Gene;locus_tag=AM1_H0070
+NC_009933.1	RefSeq	CDS	62212	62847	.	-	0	ID=cds66;Name=YP_001522734.1;Parent=gene69;Note=CobQ%2FCobB%2FMinD%2FParA nucleotide binding domain %28PF01656 and COG1192%29;Dbxref=Genbank:YP_001522734.1,GeneID:5687356;gbkey=CDS;product=CobQ%2FCobB%2FMinD%2FParA domain-containing protein;protein_id=YP_001522734.1;transl_table=11
+NC_009933.1	RefSeq	gene	63784	64704	.	-	.	ID=gene70;Name=AM1_H0071;Dbxref=GeneID:5687357;gbkey=Gene;locus_tag=AM1_H0071
+NC_009933.1	RefSeq	CDS	63784	64704	.	-	0	ID=cds67;Name=YP_001522735.1;Parent=gene70;Dbxref=Genbank:YP_001522735.1,GeneID:5687357;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522735.1;transl_table=11
+NC_009933.1	RefSeq	gene	64704	66092	.	-	.	ID=gene71;Name=AM1_H0072;Dbxref=GeneID:5687358;gbkey=Gene;locus_tag=AM1_H0072
+NC_009933.1	RefSeq	CDS	64704	66092	.	-	0	ID=cds68;Name=YP_001522736.1;Parent=gene71;Note=CobQ%2FCobB%2FMinD%2FParA nucleotide binding domain protein%2C putative;Dbxref=Genbank:YP_001522736.1,GeneID:5687358;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522736.1;transl_table=11
+NC_009933.1	RefSeq	gene	66728	66850	.	-	.	ID=gene72;Name=AM1_H0073;Dbxref=GeneID:5687359;gbkey=Gene;locus_tag=AM1_H0073
+NC_009933.1	RefSeq	CDS	66728	66850	.	-	0	ID=cds69;Name=YP_001522737.1;Parent=gene72;Dbxref=Genbank:YP_001522737.1,GeneID:5687359;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522737.1;transl_table=11
+NC_009933.1	RefSeq	gene	67121	68857	.	+	.	ID=gene73;Name=AM1_H0074;Dbxref=GeneID:5687360;gbkey=Gene;locus_tag=AM1_H0074
+NC_009933.1	RefSeq	CDS	67121	68857	.	+	0	ID=cds70;Name=YP_001522738.1;Parent=gene73;Dbxref=Genbank:YP_001522738.1,GeneID:5687360;gbkey=CDS;product=transposase%2C putative;protein_id=YP_001522738.1;transl_table=11
+NC_009933.1	RefSeq	gene	68685	69416	.	+	.	ID=gene74;Name=AM1_H0075;Dbxref=GeneID:5687361;gbkey=Gene;locus_tag=AM1_H0075
+NC_009933.1	RefSeq	CDS	68685	69416	.	+	0	ID=cds71;Name=YP_001522739.1;Parent=gene74;Note=Upstream region overlaps with a putative transposase.;Dbxref=Genbank:YP_001522739.1,GeneID:5687361;gbkey=CDS;product=transposase-associated ATP-binding protein%2C putative;protein_id=YP_001522739.1;transl_table=11
+NC_009933.1	RefSeq	gene	69495	69893	.	-	.	ID=gene75;Name=AM1_H0076;Dbxref=GeneID:5687362;gbkey=Gene;locus_tag=AM1_H0076
+NC_009933.1	RefSeq	CDS	69495	69893	.	-	0	ID=cds72;Name=YP_001522740.1;Parent=gene75;Dbxref=Genbank:YP_001522740.1,GeneID:5687362;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522740.1;transl_table=11
+NC_009933.1	RefSeq	gene	69893	70033	.	-	.	ID=gene76;Name=AM1_H0077;Dbxref=GeneID:5687363;gbkey=Gene;locus_tag=AM1_H0077
+NC_009933.1	RefSeq	CDS	69893	70033	.	-	0	ID=cds73;Name=YP_001522741.1;Parent=gene76;Dbxref=Genbank:YP_001522741.1,GeneID:5687363;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522741.1;transl_table=11
+NC_009933.1	RefSeq	gene	70373	70672	.	+	.	ID=gene77;Name=AM1_H0078;Dbxref=GeneID:5687364;gbkey=Gene;locus_tag=AM1_H0078
+NC_009933.1	RefSeq	CDS	70373	70672	.	+	0	ID=cds74;Name=YP_001522742.1;Parent=gene77;Dbxref=Genbank:YP_001522742.1,GeneID:5687364;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522742.1;transl_table=11
+NC_009933.1	RefSeq	gene	70725	70853	.	-	.	ID=gene78;Name=AM1_H0079;Dbxref=GeneID:5687365;gbkey=Gene;locus_tag=AM1_H0079
+NC_009933.1	RefSeq	CDS	70725	70853	.	-	0	ID=cds75;Name=YP_001522743.1;Parent=gene78;Dbxref=Genbank:YP_001522743.1,GeneID:5687365;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522743.1;transl_table=11
+NC_009933.1	RefSeq	gene	70935	73025	.	-	.	ID=gene79;Name=AM1_H0080;Dbxref=GeneID:5687366;gbkey=Gene;locus_tag=AM1_H0080
+NC_009933.1	RefSeq	CDS	70935	73025	.	-	0	ID=cds76;Name=YP_001522744.1;Parent=gene79;Dbxref=Genbank:YP_001522744.1,GeneID:5687366;gbkey=CDS;product=pentapeptide repeat-containing protein;protein_id=YP_001522744.1;transl_table=11
+NC_009933.1	RefSeq	gene	73139	73633	.	-	.	ID=gene80;Name=AM1_H0081;Dbxref=GeneID:5687367;gbkey=Gene;locus_tag=AM1_H0081
+NC_009933.1	RefSeq	CDS	73139	73633	.	-	0	ID=cds77;Name=YP_001522745.1;Parent=gene80;Dbxref=Genbank:YP_001522745.1,GeneID:5687367;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522745.1;transl_table=11
+NC_009933.1	RefSeq	gene	73987	77475	.	+	.	ID=gene81;Name=AM1_H0082;Dbxref=GeneID:5687368;gbkey=Gene;locus_tag=AM1_H0082
+NC_009933.1	RefSeq	CDS	73987	77475	.	+	0	ID=cds78;Name=YP_001522746.1;Parent=gene81;Dbxref=Genbank:YP_001522746.1,GeneID:5687368;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522746.1;transl_table=11
+NC_009933.1	RefSeq	gene	77485	78105	.	-	.	ID=gene82;Name=AM1_H0083;Dbxref=GeneID:5687369;gbkey=Gene;locus_tag=AM1_H0083
+NC_009933.1	RefSeq	CDS	77485	78105	.	-	0	ID=cds79;Name=YP_001522747.1;Parent=gene82;Dbxref=Genbank:YP_001522747.1,GeneID:5687369;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522747.1;transl_table=11
+NC_009933.1	RefSeq	gene	78193	79758	.	+	.	ID=gene83;Name=AM1_H0084;Dbxref=GeneID:5687370;gbkey=Gene;locus_tag=AM1_H0084
+NC_009933.1	RefSeq	CDS	78193	79758	.	+	0	ID=cds80;Name=YP_001522748.1;Parent=gene83;Dbxref=Genbank:YP_001522748.1,GeneID:5687370;gbkey=CDS;product=pentapeptide repeat-containing protein;protein_id=YP_001522748.1;transl_table=11
+NC_009933.1	RefSeq	gene	79838	81112	.	-	.	ID=gene84;Name=AM1_H0085;Dbxref=GeneID:5687371;gbkey=Gene;locus_tag=AM1_H0085
+NC_009933.1	RefSeq	CDS	79838	81112	.	-	0	ID=cds81;Name=YP_001522749.1;Parent=gene84;Dbxref=Genbank:YP_001522749.1,GeneID:5687371;gbkey=CDS;product=pentapeptide repeat-containing protein;protein_id=YP_001522749.1;transl_table=11
+NC_009933.1	RefSeq	gene	81117	81365	.	-	.	ID=gene85;Name=AM1_H0086;Dbxref=GeneID:5687372;gbkey=Gene;locus_tag=AM1_H0086
+NC_009933.1	RefSeq	CDS	81117	81365	.	-	0	ID=cds82;Name=YP_001522750.1;Parent=gene85;Dbxref=Genbank:YP_001522750.1,GeneID:5687372;gbkey=CDS;product=transposase%2C putative;protein_id=YP_001522750.1;transl_table=11
+NC_009933.1	RefSeq	gene	82218	82802	.	-	.	ID=gene86;Name=AM1_H0087;Dbxref=GeneID:5687373;gbkey=Gene;locus_tag=AM1_H0087
+NC_009933.1	RefSeq	CDS	82218	82802	.	-	0	ID=cds83;Name=YP_001522751.1;Parent=gene86;Dbxref=Genbank:YP_001522751.1,GeneID:5687373;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522751.1;transl_table=11
+NC_009933.1	RefSeq	gene	82960	84513	.	-	.	ID=gene87;Name=AM1_H0088;Dbxref=GeneID:5687374;gbkey=Gene;locus_tag=AM1_H0088
+NC_009933.1	RefSeq	CDS	82960	84513	.	-	0	ID=cds84;Name=YP_001522752.1;Parent=gene87;Dbxref=Genbank:YP_001522752.1,GeneID:5687374;gbkey=CDS;product=pentapeptide repeat-containing protein;protein_id=YP_001522752.1;transl_table=11
+NC_009933.1	RefSeq	gene	84679	88434	.	-	.	ID=gene88;Name=AM1_H0089;Dbxref=GeneID:5687375;gbkey=Gene;locus_tag=AM1_H0089
+NC_009933.1	RefSeq	CDS	84679	88434	.	-	0	ID=cds85;Name=YP_001522753.1;Parent=gene88;Dbxref=Genbank:YP_001522753.1,GeneID:5687375;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522753.1;transl_table=11
+NC_009933.1	RefSeq	gene	88569	88685	.	-	.	ID=gene89;Name=AM1_H0090;Dbxref=GeneID:5687376;gbkey=Gene;locus_tag=AM1_H0090
+NC_009933.1	RefSeq	CDS	88569	88685	.	-	0	ID=cds86;Name=YP_001522754.1;Parent=gene89;Dbxref=Genbank:YP_001522754.1,GeneID:5687376;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522754.1;transl_table=11
+NC_009933.1	RefSeq	gene	88796	89017	.	+	.	ID=gene90;Name=AM1_H0092;Dbxref=GeneID:5687377;gbkey=Gene;locus_tag=AM1_H0092
+NC_009933.1	RefSeq	CDS	88796	89017	.	+	0	ID=cds87;Name=YP_001522755.1;Parent=gene90;Dbxref=Genbank:YP_001522755.1,GeneID:5687377;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522755.1;transl_table=11
+NC_009933.1	RefSeq	gene	88971	90242	.	-	.	ID=gene91;Name=fliA;Dbxref=GeneID:5687379;gbkey=Gene;gene=fliA;locus_tag=AM1_H0091
+NC_009933.1	RefSeq	CDS	88971	90242	.	-	0	ID=cds88;Name=YP_001522756.1;Parent=gene91;Dbxref=Genbank:YP_001522756.1,GeneID:5687379;gbkey=CDS;product=RNA polymerase sigma-24 subunit;protein_id=YP_001522756.1;transl_table=11
+NC_009933.1	RefSeq	gene	91425	92288	.	+	.	ID=gene92;Name=AM1_H0093;Dbxref=GeneID:5687378;gbkey=Gene;locus_tag=AM1_H0093
+NC_009933.1	RefSeq	CDS	91425	92288	.	+	0	ID=cds89;Name=YP_001522757.1;Parent=gene92;Dbxref=Genbank:YP_001522757.1,GeneID:5687378;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522757.1;transl_table=11
+NC_009933.1	RefSeq	gene	92373	93029	.	+	.	ID=gene93;Name=AM1_H0094;Dbxref=GeneID:5687380;gbkey=Gene;locus_tag=AM1_H0094
+NC_009933.1	RefSeq	CDS	92373	93029	.	+	0	ID=cds90;Name=YP_001522758.1;Parent=gene93;Dbxref=Genbank:YP_001522758.1,GeneID:5687380;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522758.1;transl_table=11
+NC_009933.1	RefSeq	gene	93041	96166	.	+	.	ID=gene94;Name=AM1_H0095;Dbxref=GeneID:5687381;gbkey=Gene;locus_tag=AM1_H0095
+NC_009933.1	RefSeq	CDS	93041	96166	.	+	0	ID=cds91;Name=YP_001522759.1;Parent=gene94;Dbxref=Genbank:YP_001522759.1,GeneID:5687381;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522759.1;transl_table=11
+NC_009933.1	RefSeq	gene	96170	97315	.	+	.	ID=gene95;Name=AM1_H0096;Dbxref=GeneID:5687382;gbkey=Gene;locus_tag=AM1_H0096
+NC_009933.1	RefSeq	CDS	96170	97315	.	+	0	ID=cds92;Name=YP_001522760.1;Parent=gene95;Dbxref=Genbank:YP_001522760.1,GeneID:5687382;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522760.1;transl_table=11
+NC_009933.1	RefSeq	gene	97341	98618	.	+	.	ID=gene96;Name=AM1_H0097;Dbxref=GeneID:5687383;gbkey=Gene;locus_tag=AM1_H0097
+NC_009933.1	RefSeq	CDS	97341	98618	.	+	0	ID=cds93;Name=YP_001522761.1;Parent=gene96;Dbxref=Genbank:YP_001522761.1,GeneID:5687383;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522761.1;transl_table=11
+NC_009933.1	RefSeq	gene	98694	99167	.	+	.	ID=gene97;Name=AM1_H0098;Dbxref=GeneID:5687384;gbkey=Gene;locus_tag=AM1_H0098
+NC_009933.1	RefSeq	CDS	98694	99167	.	+	0	ID=cds94;Name=YP_001522762.1;Parent=gene97;Dbxref=Genbank:YP_001522762.1,GeneID:5687384;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522762.1;transl_table=11
+NC_009933.1	RefSeq	gene	99174	99851	.	+	.	ID=gene98;Name=AM1_H0099;Dbxref=GeneID:5687385;gbkey=Gene;locus_tag=AM1_H0099
+NC_009933.1	RefSeq	CDS	99174	99851	.	+	0	ID=cds95;Name=YP_001522763.1;Parent=gene98;Dbxref=Genbank:YP_001522763.1,GeneID:5687385;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522763.1;transl_table=11
+NC_009933.1	RefSeq	gene	99885	101237	.	+	.	ID=gene99;Name=AM1_H0100;Dbxref=GeneID:5687386;gbkey=Gene;locus_tag=AM1_H0100
+NC_009933.1	RefSeq	CDS	99885	101237	.	+	0	ID=cds96;Name=YP_001522764.1;Parent=gene99;Dbxref=Genbank:YP_001522764.1,GeneID:5687386;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522764.1;transl_table=11
+NC_009933.1	RefSeq	gene	101349	101747	.	-	.	ID=gene100;Name=AM1_H0101;Dbxref=GeneID:5687387;gbkey=Gene;locus_tag=AM1_H0101
+NC_009933.1	RefSeq	CDS	101349	101747	.	-	0	ID=cds97;Name=YP_001522765.1;Parent=gene100;Dbxref=Genbank:YP_001522765.1,GeneID:5687387;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522765.1;transl_table=11
+NC_009933.1	RefSeq	gene	102328	103302	.	-	.	ID=gene101;Name=AM1_H0102;Dbxref=GeneID:5687388;gbkey=Gene;locus_tag=AM1_H0102
+NC_009933.1	RefSeq	CDS	102328	103302	.	-	0	ID=cds98;Name=YP_001522766.1;Parent=gene101;Dbxref=Genbank:YP_001522766.1,GeneID:5687388;gbkey=CDS;product=lipase superfamily protein;protein_id=YP_001522766.1;transl_table=11
+NC_009933.1	RefSeq	gene	103479	104405	.	-	.	ID=gene102;Name=AM1_H0103;Dbxref=GeneID:5687389;gbkey=Gene;locus_tag=AM1_H0103
+NC_009933.1	RefSeq	CDS	103479	104405	.	-	0	ID=cds99;Name=YP_001522767.1;Parent=gene102;Dbxref=Genbank:YP_001522767.1,GeneID:5687389;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522767.1;transl_table=11
+NC_009933.1	RefSeq	gene	105125	105241	.	-	.	ID=gene103;Name=AM1_H0104;Dbxref=GeneID:5687390;gbkey=Gene;locus_tag=AM1_H0104
+NC_009933.1	RefSeq	CDS	105125	105241	.	-	0	ID=cds100;Name=YP_001522768.1;Parent=gene103;Dbxref=Genbank:YP_001522768.1,GeneID:5687390;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522768.1;transl_table=11
+NC_009933.1	RefSeq	gene	107692	108378	.	+	.	ID=gene104;Name=AM1_H0106;Dbxref=GeneID:5687391;gbkey=Gene;locus_tag=AM1_H0106
+NC_009933.1	RefSeq	CDS	107692	108378	.	+	0	ID=cds101;Name=YP_001522769.1;Parent=gene104;Dbxref=Genbank:YP_001522769.1,GeneID:5687391;gbkey=CDS;product=M23 peptidase domain-containing protein;protein_id=YP_001522769.1;transl_table=11
+NC_009933.1	RefSeq	gene	108359	108475	.	-	.	ID=gene105;Name=AM1_H0105;Dbxref=GeneID:5687393;gbkey=Gene;locus_tag=AM1_H0105
+NC_009933.1	RefSeq	CDS	108359	108475	.	-	0	ID=cds102;Name=YP_001522770.1;Parent=gene105;Dbxref=Genbank:YP_001522770.1,GeneID:5687393;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522770.1;transl_table=11
+NC_009933.1	RefSeq	gene	108706	108828	.	-	.	ID=gene106;Name=AM1_H0107;Dbxref=GeneID:5687392;gbkey=Gene;locus_tag=AM1_H0107
+NC_009933.1	RefSeq	CDS	108706	108828	.	-	0	ID=cds103;Name=YP_001522771.1;Parent=gene106;Dbxref=Genbank:YP_001522771.1,GeneID:5687392;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522771.1;transl_table=11
+NC_009933.1	RefSeq	gene	108897	110699	.	+	.	ID=gene107;Name=AM1_H0108;Dbxref=GeneID:5687394;gbkey=Gene;locus_tag=AM1_H0108
+NC_009933.1	RefSeq	CDS	108897	110699	.	+	0	ID=cds104;Name=YP_001522772.1;Parent=gene107;Dbxref=Genbank:YP_001522772.1,GeneID:5687394;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522772.1;transl_table=11
+NC_009933.1	RefSeq	gene	110689	111126	.	+	.	ID=gene108;Name=AM1_H0109;Dbxref=GeneID:5687395;gbkey=Gene;locus_tag=AM1_H0109
+NC_009933.1	RefSeq	CDS	110689	111126	.	+	0	ID=cds105;Name=YP_001522773.1;Parent=gene108;Dbxref=Genbank:YP_001522773.1,GeneID:5687395;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522773.1;transl_table=11
+NC_009933.1	RefSeq	gene	111674	112108	.	+	.	ID=gene109;Name=AM1_H0110;Dbxref=GeneID:5687396;gbkey=Gene;locus_tag=AM1_H0110
+NC_009933.1	RefSeq	CDS	111674	112108	.	+	0	ID=cds106;Name=YP_001522774.1;Parent=gene109;Dbxref=Genbank:YP_001522774.1,GeneID:5687396;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522774.1;transl_table=11
+NC_009933.1	RefSeq	gene	112662	113057	.	+	.	ID=gene110;Name=AM1_H0111;Dbxref=GeneID:5687397;gbkey=Gene;locus_tag=AM1_H0111
+NC_009933.1	RefSeq	CDS	112662	113057	.	+	0	ID=cds107;Name=YP_001522775.1;Parent=gene110;Dbxref=Genbank:YP_001522775.1,GeneID:5687397;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522775.1;transl_table=11
+NC_009933.1	RefSeq	gene	113378	113503	.	+	.	ID=gene111;Name=AM1_H0112;Dbxref=GeneID:5687398;gbkey=Gene;locus_tag=AM1_H0112
+NC_009933.1	RefSeq	CDS	113378	113503	.	+	0	ID=cds108;Name=YP_001522776.1;Parent=gene111;Dbxref=Genbank:YP_001522776.1,GeneID:5687398;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522776.1;transl_table=11
+NC_009933.1	RefSeq	gene	113645	113977	.	+	.	ID=gene112;Name=AM1_H0113;Dbxref=GeneID:5687399;gbkey=Gene;locus_tag=AM1_H0113
+NC_009933.1	RefSeq	CDS	113645	113977	.	+	0	ID=cds109;Name=YP_001522777.1;Parent=gene112;Dbxref=Genbank:YP_001522777.1,GeneID:5687399;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522777.1;transl_table=11
+NC_009933.1	RefSeq	gene	114288	115811	.	+	.	ID=gene113;Name=AM1_H0114;Dbxref=GeneID:5687400;gbkey=Gene;locus_tag=AM1_H0114
+NC_009933.1	RefSeq	CDS	114288	115811	.	+	0	ID=cds110;Name=YP_001522778.1;Parent=gene113;Dbxref=Genbank:YP_001522778.1,GeneID:5687400;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522778.1;transl_table=11
+NC_009933.1	RefSeq	gene	116049	116285	.	+	.	ID=gene114;Name=AM1_H0115;Dbxref=GeneID:5687401;gbkey=Gene;locus_tag=AM1_H0115
+NC_009933.1	RefSeq	CDS	116049	116285	.	+	0	ID=cds111;Name=YP_001522779.1;Parent=gene114;Dbxref=Genbank:YP_001522779.1,GeneID:5687401;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522779.1;transl_table=11
+NC_009933.1	RefSeq	gene	116967	117218	.	+	.	ID=gene115;Name=AM1_H0116;Dbxref=GeneID:5687402;gbkey=Gene;locus_tag=AM1_H0116
+NC_009933.1	RefSeq	CDS	116967	117218	.	+	0	ID=cds112;Name=YP_001522780.1;Parent=gene115;Dbxref=Genbank:YP_001522780.1,GeneID:5687402;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522780.1;transl_table=11
+NC_009933.1	RefSeq	gene	117240	117497	.	+	.	ID=gene116;Name=AM1_H0117;Dbxref=GeneID:5687403;gbkey=Gene;locus_tag=AM1_H0117
+NC_009933.1	RefSeq	CDS	117240	117497	.	+	0	ID=cds113;Name=YP_001522781.1;Parent=gene116;Dbxref=Genbank:YP_001522781.1,GeneID:5687403;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522781.1;transl_table=11
+NC_009933.1	RefSeq	gene	117785	118576	.	+	.	ID=gene117;Name=AM1_H0118;Dbxref=GeneID:5687404;gbkey=Gene;locus_tag=AM1_H0118
+NC_009933.1	RefSeq	CDS	117785	118576	.	+	0	ID=cds114;Name=YP_001522782.1;Parent=gene117;Dbxref=Genbank:YP_001522782.1,GeneID:5687404;gbkey=CDS;product=IS4 family transposase;protein_id=YP_001522782.1;transl_table=11
+NC_009933.1	RefSeq	gene	118631	119092	.	+	.	ID=gene118;Name=AM1_H0119;Dbxref=GeneID:5687405;gbkey=Gene;locus_tag=AM1_H0119
+NC_009933.1	RefSeq	CDS	118631	119092	.	+	0	ID=cds115;Name=YP_001522783.1;Parent=gene118;Dbxref=Genbank:YP_001522783.1,GeneID:5687405;gbkey=CDS;product=TPR domain-containing protein;protein_id=YP_001522783.1;transl_table=11
+NC_009933.1	RefSeq	gene	119562	120287	.	-	.	ID=gene119;Name=AM1_H0120;Dbxref=GeneID:5687406;gbkey=Gene;locus_tag=AM1_H0120
+NC_009933.1	RefSeq	CDS	119562	120287	.	-	0	ID=cds116;Name=YP_001522784.1;Parent=gene119;Dbxref=Genbank:YP_001522784.1,GeneID:5687406;gbkey=CDS;product=hypothetical protein;protein_id=YP_001522784.1;transl_table=11
+###

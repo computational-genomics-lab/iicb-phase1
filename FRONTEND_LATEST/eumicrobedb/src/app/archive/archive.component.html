@@ -1,0 +1,26 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div *ngIf="loading" class="loader"></div>
+
+<div class="container full-page">
+    <div id="help_page">
+        <div class="box">
+            <div class="buffer">
+                <h2>Version Information</h2>
+
+                <div *ngIf="! loading" class="help_p">
+
+                    <div class="mb-4" *ngFor="let item of data">
+                        <h3>{{ item.Archive_Heading }}</h3>
+                        <p>Released on {{ item.Released_On_Month + " " + item.Released_On_Year }}</p>
+                        <div>{{ item.Update_Text }}</div>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

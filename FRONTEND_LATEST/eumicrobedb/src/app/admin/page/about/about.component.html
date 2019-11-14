@@ -1,0 +1,78 @@
+<app-admin-header></app-admin-header>
+
+<div *ngIf="!showForm" class="loader"></div>
+
+<div class="container-fluid full-page-admin">
+    <div class="row">
+        <div class="col my-3">
+            <form [formGroup]="form" (ngSubmit)="saveContent()">
+                <div class="card">
+                    <div class="card-header"><h5 class="m-0">Edit About Page</h5></div>
+                    <div class="card-body">
+                        
+                        <div id="content-block" *ngIf="showForm">
+                            <table class="table table-striped table-bordered cust">
+                                <thead>
+                                    <tr>
+                                        <th>Status</th>
+                                        <th>Profile Picture</th>
+                                        <th>Name</th>
+                                        <th>Contact</th>
+                                        <th>Category</th>
+                                        <th width="25%">Bio</th>
+                                        <th width="25%">Interest in</th>
+                                    </tr>
+                                </thead>
+                                <tbody>                                    
+                                    <tr *ngFor="let item of form.get('items').controls; let i = index;" formArrayName="items">
+                                        <td [formGroupName]="i">
+                                            <div class="custom-control custom-switch">
+                                                <input class="custom-control-input" id="customSwitch{{ i }}" type="checkbox" formControlName="status">
+                                                <label class="custom-control-label" for="customSwitch{{ i }}">show</label>
+                                            </div>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <div class="profile-image-wrapper position-relative">
+                                                <img src="{{ item.value.photo }}" width="200" class="img-thumbnail">
+                                                <button type="button" class="btn btn-sm btn-outline-primary btn-change fas fa-cloud-upload-alt" (click)="openImage($event)" title="Change Picture"></button>
+                                                <input type="file" class="file-uploader d-none" (change)="convertImage($event)">
+                                                <input type="hidden" formControlName="photo">
+                                            </div>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <input type="text" class="form-control" formControlName="person">
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <input type="text" class="form-control" formControlName="email">
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <select formControlName="type_no" class="custom-select">
+                                                <option value="{{ i }}" *ngFor="let category of categories; let i = index;">{{ category }}</option>
+                                            </select>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <textarea class="form-control" formControlName="bio" rows="3"></textarea>
+                                        </td>
+                                        <td [formGroupName]="i">
+                                            <textarea class="form-control" formControlName="interest" rows="3"></textarea>
+                                        </td>
+                                    </tr>    
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>
+                    <div class="card-footer">
+                        <button [disabled]="loading" class="btn btn-primary">
+                            <span *ngIf="! loading">Save Changes</span>
+                            <span *ngIf="loading">Please wait...</span>
+                        </button>
+                        <a [routerLink]="['/admin/dashboard']" class="btn btn-outline-secondary ml-3">Cancel</a>
+                        <button (click)="addItem()" type="button" class="btn btn-info float-right">Add New</button>
+                    </div>                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<app-admin-footer></app-admin-footer>

@@ -1,0 +1,19 @@
+<app-top-bar></app-top-bar>
+<app-nav-bar></app-nav-bar>
+
+<div class="loader" *ngIf="loading"></div>
+
+<div class="container full-page">
+    <div id="query_page">
+        <div class="box">
+            <div class="buffer">
+                <h2>Contact Information</h2>
+                <div class="px-2 py-3">
+                    <p *ngFor="let item of data">{{ item.ContactUs_Info_Text }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

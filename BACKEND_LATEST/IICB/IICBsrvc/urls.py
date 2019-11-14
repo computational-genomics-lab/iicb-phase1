@@ -1,0 +1,41 @@
+from django.urls import path
+from . import views, browserImage
+
+
+urlpatterns = [
+    path('gettreedata/', views.gettreedata, name='gettreedata'),
+    path('getlistdata/', views.getlistdata, name='getlistdata'),
+    path('GetData_Usage_Policy/', views.GetData_Usage_Policy, name='GetData_Usage_Policy'),
+    path('SetData_Usage_Policy/', views.SetData_Usage_Policy, name='SetData_Usage_Policy'),
+    path('GetData_News/', views.GetData_News, name='GetData_News'),
+    path('GetDataAbout/', views.GetDataAbout, name='GetDataAbout'),
+    path('SetDataAbout/', views.SetDataAbout, name='SetDataAbout'),
+    path('SetData_News/', views.SetData_News, name='SetData_News'),
+    path('GetAboutUs/', views.GetAboutUs, name='GetAboutUs'),
+    path('SetAboutUs/', views.SetAboutUs, name='SetAboutUs'),
+    path('GetHelp/', views.GetHelp, name='GetHelp'),
+    path('GetHelpQuesAns/', views.GetHelpQuesAns, name='GetHelpQuesAns'),
+    path('SetHelpPage/', views.SetHelpPage, name='SetHelpPage'),
+    path('SetHelpQuesAns/', views.SetHelpQuesAns, name='SetHelpQuesAns'),
+    path('GetArchivePage/', views.GetArchivePage, name='GetArchivePage'),
+    path('SetArchivePage/', views.SetArchivePage, name='SetArchivePage'),
+    path('chromosomePageUI/', browserImage.chromosomePageUI, name='chromosomePageUI'),
+    path('sequenceDetailUI/', browserImage.sequenceDetailUI, name='sequenceDetailUI'),
+    path('scaffoldPosLinkUI/', browserImage.scaffoldPosLinkUI, name='scaffoldPosLinkUI'),
+    path('sciTabUI/', browserImage.sciTabUI, name='sciTabUI'),
+    path('QueryByGeneName/', browserImage.QueryByGeneName, name='QueryByGeneName'),
+    path('QueryByPrimaryAnnotation/', browserImage.QueryByPrimaryAnnotation, name='QueryByPrimaryAnnotation'),
+    path('QueryByGenomeLocation/', browserImage.QueryByGenomeLocation, name='QueryByGenomeLocation'),
+    path('QueryByConservedRegions/', browserImage.QueryByConservedRegions, name='QueryByConservedRegions'),
+    path('QueryByKEGGorthologyid/', browserImage.QueryByKEGGorthologyid, name='QueryByKEGGorthologyid'),
+    path('QueryByclusterid/', browserImage.QueryByclusterid, name='QueryByclusterid'),
+    path('QueryByclusterdescription/', browserImage.QueryByclusterdescription, name='QueryByclusterdescription'),
+    path('QueryByProteinDomainmotiffunction/', browserImage.QueryByProteinDomainmotiffunction, name='QueryByProteinDomainmotiffunction'),
+    path('QueryBySecretomeTMHMM/', browserImage.QueryBySecretomeTMHMM, name='QueryBySecretomeTMHMM'),
+    path('ProcessQueries/', browserImage.ProcessQueries, name='ProcessQueries'),
+    path('GetContactUs/', views.GetContactUs, name='GetContactUs'),
+    path('SetContactUs/', views.SetContactUs, name='SetContactUs'),
+    path('GetVideos/', views.GetVideos, name='GetVideos'),
+    path('SetVideos/', views.SetVideos, name='SetVideos'),
+    path('UploadFile/',browserImage.UploadFile,name='UploadFile')
+]

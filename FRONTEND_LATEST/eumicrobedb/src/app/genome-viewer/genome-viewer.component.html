@@ -1,0 +1,99 @@
+<app-top-bar-custom></app-top-bar-custom>
+<app-nav-bar></app-nav-bar>
+
+<div class="loader" *ngIf="loading"></div>
+
+<div class="container-fluid px-0 position-relative full-page">
+
+    <div class="genome-viewer-box">
+        <div>
+            <div class="viewer-left-box position-fixed nav-box bg-gray p-3">
+                <h5>Scaffold Information</h5>
+                <p><strong>Name: {{ urlParams.scaffold }}</strong></p>
+                <p>Location: <span class="genome-location-label">1-150000</span></p>
+                <p><a title="Download the scaffold data." (click)="saveScaffoldDatatoFile()"
+                        class="text-success font-weight-bold hover-link">Download Scaffold</a></p>
+                <h5>Color Coding Scheme</h5>
+                <p class="text-center">Quality score on a scale of 1 to 5</p>
+                <p class="text-center">1 --Best; 5 --least</p>
+                <div class="color-box d-flex flex-column align-items-center">
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="color"></div>1
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="color"></div>2
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="color"></div>3
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="color"></div>4
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="color"></div>5
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-fixed fixed-left-box text-center">
+            <div class="heading-box" *ngIf="! loading">
+                <div>
+                    <h3 class="text-info"><u>{{ genome_label }}</u></h3>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="card w-100 py-2">
+                    <form class="form-inline1" id="gff-uploader" (submit)="uploadGFF()">
+                        <label class="mr-2">Gff Uploader:</label>
+                        <input type="file" id="gff-file" name="gff" (change)="setgffFile($event)" accept=".gff">
+                        <button class="btn btn-sm btn-outline-info mr-3">Upload</button>
+                        <a id="help" class="text-primary hover-link" (click)="openModal(template)">Help</a>
+                    </form>                    
+                </div>
+            </div>
+            <div class="d-inline-block">
+                <div id="brush" class="d-none1"></div>
+                <div id="linearchart"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<ng-template #template>
+<div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="gff_ins">
+        <h3 class="text-center">GFF Visualizer Instruction</h3>
+        <ul>
+            <li>The program accepts only GFF file.</li>
+            <li>Visualization of GFF file depends on the first field (SEQNAME: - Name of the chromosome or scaffold) of
+                the GFF file.</li>
+            <ol>
+                <li><b>Condition 1:</b> only one chromosome or scaffold present:</li>
+                <ul>
+                    <li>GFF Visualizer shows the gene and exon information depending on their availability</li>
+                </ul>
+                <li><b>Condition 2:</b> Multiple chromosome or scaffold present:</li>
+                <ul>
+                    <li>Program will choose a scaffold or chromosome name whose name is matching with existing scaffold
+                        or chromosome name of the genome browser and shows the gene and exon information depending on
+                        their availability</li>
+                </ul>
+            </ol>
+            <li>Hovering on the tracks shows the annotation information depending on their availability</li>
+            <li>Gene and exon tracks are linked to the exiting browser genome and a click on a gene shows nucleotide
+                sequences associated with the browser genome</li>
+            <li>Presently this program can handle up to 10 MB of file and after uploading it takes less than 1 minute of
+                generate the output</li>
+            <li>For template GFF: visit <a class="text-primary hover-link" [routerLink]="['/gff-template']" target="_blank">Download</a></li>
+        </ul>
+    </div>
+</div>
+</ng-template>
+
+<app-footer></app-footer>

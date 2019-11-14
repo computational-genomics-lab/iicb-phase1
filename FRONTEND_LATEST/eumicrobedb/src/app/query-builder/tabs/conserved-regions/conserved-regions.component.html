@@ -1,0 +1,31 @@
+<div class="loader" *ngIf="loading"></div>
+
+<ng-container *ngIf="! loading">
+    <h5 class="text-danger">Search for conserved regions</h5>
+    <form [formGroup]="queryForm" (ngSubmit)="processQuery()">
+        <div class="form-group row">
+            <label for="organism_name" class="col-md-3 col-form-label">Select an organism</label>
+            <div class="col-md-6">
+                <select id="organism_name" class="custom-select" formControlName="organism_name">
+                    <option value=""></option>
+                    <option *ngFor="let item of listItems" value="{{ item.organism + '-' + item.version }}">{{ item.label }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="genome_location" class="col-md-3 col-form-label">Enter Genome Location</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="genome_location" formControlName="genome_location">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary px-3" [disabled]="!queryForm.valid || processingQuery"><span *ngIf="!processingQuery"><i class="fas fa-search"></i> Search</span><span *ngIf="processingQuery">Please Wait...</span></button>
+    </form>
+
+    <ng-container *ngIf="queryItem">
+        <hr>
+        <h3 class="text-primary">Search Results <span *ngIf="queryItem">({{ queryItem.query.length }})</span></h3>
+        <table id="conserved-regions-search-result" class="table table-striped table-sm my-3"></table>
+    </ng-container>
+
+    <div class="alert alert-danger mt-3" role="alert">This query results in listing out all other oomycetes genomes that has a good matching region to the query genome location. The target regions on click leads to an output similar to Genome Location query.<br>Input Format: Scaffold_name:location_start-location_end. e.g: Scaffold_2:4000-50000</div>
+</ng-container>

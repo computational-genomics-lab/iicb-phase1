@@ -1,0 +1,70 @@
+.genome-viewer-box {
+	/* --header: 179px; */
+	--header: 167px;
+}
+#track-labels {
+	margin: 17px 0;
+}
+.track-label {
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    width: 100%;
+}
+.genome-viewer-box {
+	display: grid;
+	grid-template-columns: 210px 1fr;
+	grid-column-gap: 14px;	
+}
+.viewer-left-box {
+	width: 210px;
+    top: var(--header);
+    bottom: 0;
+    overflow-y: auto;	
+}
+
+.bg-gray {
+	background-color: #C6CBD0;
+	color: #000000;
+}
+.color-box .color {
+	display: inline-block;
+	height: 18px;
+	margin-right: 1em;
+	width: 18px;
+}
+
+.color-box div:first-child .color {
+	background-color: #FF0000;
+}
+.color-box div:nth-child(2) .color {
+	background-color: #9400D3;
+}
+.color-box div:nth-child(3) .color {
+	background-color: #000099;
+}
+.color-box div:nth-child(4) .color {
+	background-color: #000000;
+}
+.color-box div:last-child .color {
+	background-color: #008080;
+}
+.show-track, .hide-track {
+	border: 1px solid #ccc;
+	display: table;
+    padding: 2px 4px 2px;
+    margin: 0 3px 0 0;
+    text-align: center;
+}
+
+.fixed-left-box {
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    top: var(--header);
+}
+.gff_ins {
+    line-height: 1.5;
+}
